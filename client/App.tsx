@@ -21,35 +21,27 @@ const PlaceholderPage = ({ title }: { title: string }) => (
   </div>
 );
 
-export const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/services" element={<PlaceholderPage title="Services" />} />
-          <Route path="/projects" element={<PlaceholderPage title="Projects" />} />
-          <Route path="/about" element={<PlaceholderPage title="About Us" />} />
-          <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/services" element={<PlaceholderPage title="Services" />} />
+            <Route path="/projects" element={<PlaceholderPage title="Projects" />} />
+            <Route path="/about" element={<PlaceholderPage title="About Us" />} />
+            <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
 
 export default App;
-
-// Render the app
-if (typeof document !== 'undefined') {
-  import('react-dom/client').then(({ createRoot }) => {
-    const root = document.getElementById('root');
-    if (root) {
-      createRoot(root).render(<App />);
-    }
-  });
-}

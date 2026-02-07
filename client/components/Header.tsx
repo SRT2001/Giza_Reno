@@ -9,28 +9,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <svg
-              width="102"
-              height="34"
-              viewBox="0 0 102 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-auto"
-            >
-              <path
-                d="M0 0H17L8.5 17L0 34V0Z"
-                fill="#FFD700"
-              />
-              <path
-                d="M8.5 0H25.5L17 17L8.5 34V0Z"
-                fill="#FFC000"
-              />
-            </svg>
-            <div className="flex items-baseline gap-0">
-              <span className="text-xl font-bold text-gray-900">Real</span>
-              <span className="text-xl font-light text-gray-900 tracking-tight">INNOVATIONS</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F5169604d52764ef4916dbba8a5e3c3a0"
+              alt="Giza Renovations"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

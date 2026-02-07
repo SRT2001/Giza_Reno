@@ -28,7 +28,7 @@ export default function Header() {
               />
             </svg>
             <div className="flex items-baseline gap-0">
-              <span className="text-xl font-bold text-gray-900">Info</span>
+              <span className="text-xl font-bold text-gray-900">Real</span>
               <span className="text-xl font-light text-gray-900 tracking-tight">INNOVATIONS</span>
             </div>
           </Link>

@@ -116,6 +116,57 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Expert Remodeling Services Section */}
+      <section className="bg-gray-50 py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Column - Content */}
+            <div className="order-1 lg:order-1">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                Transform Your Home with Giza Renovations' Expert Remodeling Services
+              </h2>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
+                At Giza Renovations, we specialize in a wide range of home remodeling services, including
+                kitchen remodeling, bathroom renovations, and home extensions. Our team of experienced
+                professionals is dedicated to delivering high-quality craftsmanship and exceptional customer
+                service.
+              </p>
+
+              {/* Feature List */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span className="text-gray-900 font-medium">Revitalize your kitchen with our expert remodeling solutions.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                  <span className="text-gray-900 font-medium">Upgrade your bathroom with our innovative design concepts.</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                  </svg>
+                  <span className="text-gray-900 font-medium">Expand your living space with our seamless home extension solutions.</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Image */}
+            <div className="order-2 lg:order-2">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2cbb7f16d2704d39bf08b12c7eb723b3?format=webp&width=800&height=1200"
+                alt="Modern luxury home with pool and outdoor living space"
+                className="w-full h-auto rounded-lg shadow-lg object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

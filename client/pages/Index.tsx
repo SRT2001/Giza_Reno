@@ -44,53 +44,73 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="bg-gray-50 py-20 md:py-32">
+      {/* Experience the Difference Section */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Services
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive home renovation solutions tailored to your needs
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-brand-yellow rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Kitchen Remodeling</h3>
-              <p className="text-gray-600">
-                Transform your kitchen into a stunning, functional space with custom cabinetry and modern finishes.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Column - Image */}
+            <div className="order-2 lg:order-1">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F979f3f48b2e84b87974bd3fb148178e9?format=webp&width=800&height=1200"
+                alt="Modern kitchen renovation with bar stools and dining area"
+                className="w-full h-auto rounded-lg shadow-lg object-cover"
+              />
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-brand-yellow rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Bathroom Renovations</h3>
-              <p className="text-gray-600">
-                Create your dream bathroom with elegant fixtures, luxurious tiles, and expert craftsmanship.
+            {/* Right Column - Content */}
+            <div className="order-1 lg:order-2">
+              <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
+                Transform
               </p>
-            </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                Experience the Difference with Giza Renovations
+              </h2>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8">
+                At Giza Renovations, we pride ourselves on providing exceptional home remodeling services.
+                With our team of experienced professionals, high-quality materials, and personalized service,
+                we ensure that every project is completed to the highest standards.
+              </p>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-brand-yellow rounded-lg mb-6 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+              {/* Feature List */}
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  <span className="text-gray-900 font-medium">Experienced Professionals</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                  <span className="text-gray-900 font-medium">Quality Materials</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                  <span className="text-gray-900 font-medium">Personalized Service</span>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Full Home Remodels</h3>
-              <p className="text-gray-600">
-                Complete home transformations with meticulous attention to detail and quality construction.
-              </p>
+
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/about"
+                  className="px-6 py-3 border-2 border-gray-900 text-gray-900 rounded text-base font-semibold hover:bg-gray-900 hover:text-white transition-colors text-center"
+                >
+                  Learn More
+                </Link>
+                <Link
+                  to="/contact"
+                  className="px-6 py-3 bg-transparent text-gray-900 rounded text-base font-semibold hover:text-gray-600 transition-colors text-center flex items-center justify-center gap-2"
+                >
+                  Get Started
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

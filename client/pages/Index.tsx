@@ -44,15 +44,15 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Services Section */}
       <section className="bg-gray-50 py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              What We Do
+              Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Delivering excellence across multiple domains
+              Comprehensive home renovation solutions tailored to your needs
             </p>
           </div>
 
@@ -60,36 +60,36 @@ export default function Index() {
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-brand-yellow rounded-lg mb-6 flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Innovation</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Kitchen Remodeling</h3>
               <p className="text-gray-600">
-                Cutting-edge solutions that push boundaries and create new possibilities for your business.
+                Transform your kitchen into a stunning, functional space with custom cabinetry and modern finishes.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-brand-yellow rounded-lg mb-6 flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Development</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Bathroom Renovations</h3>
               <p className="text-gray-600">
-                Expert software development services that bring your vision to life with precision and quality.
+                Create your dream bathroom with elegant fixtures, luxurious tiles, and expert craftsmanship.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-brand-yellow rounded-lg mb-6 flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Performance</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Full Home Remodels</h3>
               <p className="text-gray-600">
-                Optimized solutions that deliver exceptional speed, reliability, and scalability for your users.
+                Complete home transformations with meticulous attention to detail and quality construction.
               </p>
             </div>
           </div>

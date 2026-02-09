@@ -100,16 +100,16 @@ export default function Index() {
       <section className="py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Ready to Start Your Project?
+            Ready to Transform Your Home?
           </h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Let's work together to create something amazing
+            Get a free consultation and quote for your renovation project today
           </p>
           <Link
             to="/contact"
-            className="inline-block px-8 py-4 bg-brand-dark text-white rounded text-lg font-medium hover:bg-gray-800 transition-colors"
+            className="inline-block px-8 py-4 bg-brand-dark text-white rounded text-lg font-semibold hover:bg-gray-800 transition-colors"
           >
-            Contact Us Today
+            Get A Free Quote
           </Link>
         </div>
       </section>

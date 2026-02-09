@@ -3,29 +3,43 @@ import { Link } from "react-router-dom";
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-        <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
-            Transforming Ideas into{" "}
-            <span className="text-brand-yellow">Innovative</span> Solutions
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl">
-            We help businesses grow through cutting-edge technology and creative problem-solving.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              to="/projects"
-              className="px-8 py-4 bg-brand-dark text-white rounded text-lg font-medium hover:bg-gray-800 transition-colors text-center"
-            >
-              View Our Work
-            </Link>
-            <Link
-              to="/contact"
-              className="px-8 py-4 border-2 border-gray-300 text-gray-900 rounded text-lg font-medium hover:bg-gray-50 transition-colors text-center"
-            >
-              Get in Touch
-            </Link>
+      {/* Hero Section with Background Image */}
+      <section className="relative h-[600px] md:h-[700px] lg:h-[800px] w-full">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fda18ea58947748248ccfb400e7872d02')`,
+          }}
+        >
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Transform Your Home<br />
+              with Giza Renovations
+            </h1>
+            <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-xl">
+              Experience the beauty and functionality of our expert home remodeling services.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/projects"
+                className="px-8 py-3 bg-white text-gray-900 rounded text-base font-semibold hover:bg-gray-100 transition-colors text-center"
+              >
+                Explore Our Work
+              </Link>
+              <Link
+                to="/contact"
+                className="px-8 py-3 border-2 border-white text-white rounded text-base font-semibold hover:bg-white/10 transition-colors text-center"
+              >
+                Get A Free Quote
+              </Link>
+            </div>
           </div>
         </div>
       </section>

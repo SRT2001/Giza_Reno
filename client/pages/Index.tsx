@@ -4,16 +4,16 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative h-[600px] md:h-[700px] lg:h-[800px] w-full">
+      <section className="relative h-[600px] md:h-[700px] lg:h-[800px] w-full overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fda18ea58947748248ccfb400e7872d02')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe7bdbb23a2704eb8930a26f6d9d2bb9b?format=webp&width=800&height=1200')`,
           }}
         >
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/20"></div>
+          {/* Linear gradient overlay from left to right for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10"></div>
         </div>
 
         {/* Hero Content */}

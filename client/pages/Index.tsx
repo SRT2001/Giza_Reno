@@ -51,7 +51,7 @@ export default function Index() {
             {/* Left Column - Image */}
             <div className="order-2 lg:order-1">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F979f3f48b2e84b87974bd3fb148178e9?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F15f789b43626491faf6861b10502ffd3?format=webp&width=800&height=1200"
                 alt="Modern kitchen renovation with bar stools and dining area"
                 className="w-full h-auto rounded-lg shadow-lg object-cover"
               />

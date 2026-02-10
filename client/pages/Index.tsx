@@ -184,6 +184,177 @@ export default function Index() {
           </Link>
         </div>
       </section>
+
+      {/* Happy Customers - Testimonials Section */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Happy Customers
+            </h2>
+            <p className="text-lg text-gray-600">
+              Hear what our satisfied clients have to say
+            </p>
+          </div>
+
+          {/* Testimonials Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Testimonial Card 1 */}
+            <div className="border border-gray-300 rounded-lg p-6 bg-white">
+              {/* Stars */}
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-black fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              {/* Testimonial Text */}
+              <p className="text-gray-900 mb-6 leading-relaxed">
+                Our experience with Giza Renovations was exceptional. They exceeded our expectations.
+              </p>
+              {/* Customer Info */}
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">John Doe</p>
+                  <p className="text-sm text-gray-600">Homeowner, ABC Company</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial Card 2 */}
+            <div className="border border-gray-300 rounded-lg p-6 bg-white">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-black fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-900 mb-6 leading-relaxed">
+                The team at Giza Renovations transformed our kitchen beyond our wildest dreams. Their attention to detail and professionalism was outstanding from start to finish.
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Sarah Johnson</p>
+                  <p className="text-sm text-gray-600">Position, Company name</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial Card 3 */}
+            <div className="border border-gray-300 rounded-lg p-6 bg-white">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-black fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-900 mb-6 leading-relaxed">
+                We couldn't be happier with our new bathroom renovation. The quality of work and materials used exceeded all our expectations. Highly recommended!
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Michael Chen</p>
+                  <p className="text-sm text-gray-600">Position, Company name</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial Card 4 */}
+            <div className="border border-gray-300 rounded-lg p-6 bg-white">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-black fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-900 mb-6 leading-relaxed">
+                Giza Renovations transformed our outdated kitchen into a modern and functional space. We couldn't be happier with the results.
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Jane Smith</p>
+                  <p className="text-sm text-gray-600">Business Owner, XYZ Corporation</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial Card 5 */}
+            <div className="border border-gray-300 rounded-lg p-6 bg-white">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-black fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-900 mb-6 leading-relaxed">
+                From consultation to completion, Giza Renovations delivered exceptional service. Our home extension was completed on time and within budget.
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Robert Martinez</p>
+                  <p className="text-sm text-gray-600">Position, Company name</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial Card 6 */}
+            <div className="border border-gray-300 rounded-lg p-6 bg-white">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-black fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-900 mb-6 leading-relaxed">
+                Outstanding craftsmanship and customer service! Giza Renovations made our dream home a reality. Every detail was handled with care and precision.
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">Emily Davis</p>
+                  <p className="text-sm text-gray-600">Position, Company name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

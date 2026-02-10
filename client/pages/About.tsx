@@ -254,32 +254,165 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 md:py-24 lg:py-32">
+      <section className="bg-white py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          {/* Section Header */}
+          <div className="text-center mb-12 md:mb-16">
             <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
-              Our Team
+              Transforming
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Meet the Experts
+              Meet Our Team
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Our skilled professionals bring years of experience and passion to every project
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+              We are a passionate team of experts in home remodeling.
             </p>
           </div>
 
-          <div className="text-center">
-            <p className="text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
-              Our team consists of licensed contractors, skilled craftsmen, experienced designers, and dedicated 
-              project managers who work together seamlessly to deliver exceptional results. We invest in ongoing 
-              training and development to ensure our team stays at the cutting edge of renovation techniques and 
-              technologies.
+          {/* Team Members Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {/* Team Member 1 - Sandro Rodriguez */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="Sandro Rodriguez"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Sandro Rodriguez</h3>
+              <p className="text-sm text-gray-600 mb-3">CEO</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                With over 10 years of experience, Sandro is dedicated to delivering exceptional results.
+              </p>
+            </div>
+
+            {/* Team Member 2 - Jane Smith */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="Jane Smith"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Jane Smith</h3>
+              <p className="text-sm text-gray-600 mb-3">Lead Designer</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Jane's creative vision and attention to detail bring our clients' dreams to life.
+              </p>
+            </div>
+
+            {/* Team Member 3 - Michael Johnson */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="Michael Johnson"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Michael Johnson</h3>
+              <p className="text-sm text-gray-600 mb-3">Project Manager</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Michael's expertise ensures that every project is completed on time and within budget.
+              </p>
+            </div>
+
+            {/* Team Member 4 - Sarah Davis */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="Sarah Davis"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Sarah Davis</h3>
+              <p className="text-sm text-gray-600 mb-3">Interior Designer</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Sarah's keen eye for design creates beautiful and functional spaces for our clients.
+              </p>
+            </div>
+
+            {/* Team Member 5 - David Wilson */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="David Wilson"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">David Wilson</h3>
+              <p className="text-sm text-gray-600 mb-3">Construction Manager</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                David's expertise in construction ensures that every project is built to the highest standards.
+              </p>
+            </div>
+
+            {/* Team Member 6 - Mario Rossi */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="Mario Rossi"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Mario Rossi</h3>
+              <p className="text-sm text-gray-600 mb-3">Site Supervisor</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Wayne's leadership on site ensures efficient labor and gives clients guidance on ongoing projects.
+              </p>
+            </div>
+
+            {/* Team Member 7 - Robert Wayne */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="Robert Wayne"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Robert Wayne</h3>
+              <p className="text-sm text-gray-600 mb-3">Architect</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Robert's technicality ensures that every design meets any code requirement and matches clients expectations.
+              </p>
+            </div>
+
+            {/* Team Member 8 - Thomas Cardenaz */}
+            <div className="text-center">
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <img
+                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  alt="Thomas Cardenaz"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Thomas Cardenaz</h3>
+              <p className="text-sm text-gray-600 mb-3">Estimator</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Thomas finance background ans skills plays a large roll in project budgeting and cost efficiency.
+              </p>
+            </div>
+          </div>
+
+          {/* Hiring CTA */}
+          <div className="text-center mt-12 md:mt-16">
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              We're hiring!
+            </h3>
+            <p className="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <Link
               to="/contact"
-              className="inline-block px-8 py-4 bg-brand-dark text-white rounded text-lg font-semibold hover:bg-gray-800 transition-colors"
+              className="inline-block px-8 py-3 border-2 border-gray-900 text-gray-900 rounded text-base font-semibold hover:bg-gray-900 hover:text-white transition-colors"
             >
-              Work With Us
+              Contact Us
             </Link>
           </div>
         </div>

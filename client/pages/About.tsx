@@ -9,7 +9,7 @@ export default function About() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F5770ed230d7d4ff3ad4c40592be54e0e?format=webp&width=800&height=1200')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F5770ed230d7d4ff3ad4c40592be54e0e?format=webp&width=1600&height=2400')`,
           }}
         >
           {/* Gradient overlay from left to right for text readability */}

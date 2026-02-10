@@ -51,7 +51,7 @@ export default function Index() {
             {/* Left Column - Image */}
             <div className="order-2 lg:order-1">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F15f789b43626491faf6861b10502ffd3?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F15f789b43626491faf6861b10502ffd3?format=webp&width=1600&height=2400"
                 alt="Modern kitchen renovation with bar stools and dining area"
                 className="w-full h-auto rounded-lg shadow-lg object-cover"
               />
@@ -158,7 +158,7 @@ export default function Index() {
             {/* Right Column - Image */}
             <div className="order-2 lg:order-2">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2cbb7f16d2704d39bf08b12c7eb723b3?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2cbb7f16d2704d39bf08b12c7eb723b3?format=webp&width=1600&height=2400"
                 alt="Modern luxury home with pool and outdoor living space"
                 className="w-full h-auto rounded-lg shadow-lg object-cover"
               />
@@ -189,7 +189,7 @@ export default function Index() {
             <div className="group">
               <div className="overflow-hidden rounded-lg mb-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F1d11e29c7b3044eebf58b9f614dd32a1?format=webp&width=800&height=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F1d11e29c7b3044eebf58b9f614dd32a1?format=webp&width=1600&height=2400"
                   alt="Modern Kitchen Renovation with sleek cabinetry and marble countertops"
                   className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -219,7 +219,7 @@ export default function Index() {
             <div className="group">
               <div className="overflow-hidden rounded-lg mb-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F213c7665abde47b5840d803798176e20?format=webp&width=800&height=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F213c7665abde47b5840d803798176e20?format=webp&width=1600&height=2400"
                   alt="Luxurious Bathroom Remodel with modern fixtures and elegant design"
                   className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                 />

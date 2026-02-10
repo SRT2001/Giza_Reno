@@ -291,7 +291,7 @@ export default function About() {
             <div className="text-center">
               <div className="mb-4 overflow-hidden rounded-lg">
                 <img
-                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Ffd89736fcd404d16b0b5aed80f852f66?format=webp&width=1600&height=2400"
                   alt="Jane Smith"
                   className="w-full h-auto object-cover"
                 />

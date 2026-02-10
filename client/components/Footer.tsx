@@ -91,15 +91,15 @@ export default function Footer() {
           {/* Contact Us Column */}
           <div>
             <h3 className="text-base font-bold text-gray-900 mb-4">Contact Us</h3>
-            <form className="flex gap-2">
+            <form className="flex gap-2 w-full max-w-sm">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                className="flex-1 min-w-0 px-4 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
               />
               <button
                 type="submit"
-                className="px-6 py-2 bg-gray-900 text-white rounded text-sm font-semibold hover:bg-gray-800 transition-colors"
+                className="flex-shrink-0 px-6 py-2 bg-gray-900 text-white rounded text-sm font-semibold hover:bg-gray-800 transition-colors whitespace-nowrap"
               >
                 Send
               </button>

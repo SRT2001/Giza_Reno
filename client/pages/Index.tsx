@@ -258,21 +258,43 @@ export default function Index() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 md:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Ready to Transform Your Home?
-          </h2>
-          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Get a free consultation and quote for your renovation project today
-          </p>
-          <Link
-            to="/contact"
-            className="inline-block px-8 py-4 bg-brand-dark text-white rounded text-lg font-semibold hover:bg-gray-800 transition-colors"
-          >
-            Get A Free Quote
-          </Link>
+      {/* CTA Section with Background */}
+      <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F3e01e85b34ed4ac28e8c9d7796c7e7b4?format=webp&width=800&height=1200')`,
+          }}
+        >
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        {/* CTA Content */}
+        <div className="relative h-full flex items-center justify-center">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+              Transform Your Home with Giza
+            </h2>
+            <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-2xl mx-auto drop-shadow-md">
+              Schedule a consultation today to discuss your home remodeling needs.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link
+                to="/contact"
+                className="px-8 py-3 bg-white text-gray-900 rounded text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+              >
+                Schedule
+              </Link>
+              <Link
+                to="/services"
+                className="px-8 py-3 bg-gray-600 text-white rounded text-base font-semibold hover:bg-gray-700 transition-colors shadow-lg"
+              >
+                Services
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

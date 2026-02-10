@@ -96,6 +96,105 @@ export default function About() {
         </div>
       </section>
 
+      {/* Timeline Section - Building Dreams */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Left Column - Heading and CTA */}
+            <div className="order-2 lg:order-1">
+              <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
+                Transform
+              </p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-8">
+                Building Dreams, One Renovation at a Time
+              </h2>
+              <Link
+                to="/contact"
+                className="inline-block px-6 py-3 border-2 border-gray-900 text-gray-900 rounded text-base font-semibold hover:bg-gray-900 hover:text-white transition-colors"
+              >
+                Get Started
+              </Link>
+            </div>
+
+            {/* Right Column - Timeline */}
+            <div className="order-1 lg:order-2">
+              <div className="space-y-8">
+                {/* Timeline Item 1 */}
+                <div className="flex gap-6">
+                  <div className="flex flex-col items-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
+                      <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                      </svg>
+                    </div>
+                    <div className="w-0.5 h-full bg-gray-300 mt-2"></div>
+                  </div>
+                  <div className="pb-8">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Our Beginnings</h3>
+                    <p className="text-gray-700">
+                      Founded in 2005, Giza Renovations started as a small family-owned business.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Timeline Item 2 */}
+                <div className="flex gap-6">
+                  <div className="flex flex-col items-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
+                      <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                      </svg>
+                    </div>
+                    <div className="w-0.5 h-full bg-gray-300 mt-2"></div>
+                  </div>
+                  <div className="pb-8">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Expanding Reach</h3>
+                    <p className="text-gray-700">
+                      In 2010, we expanded our services to cover the entire state, serving more customers.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Timeline Item 3 */}
+                <div className="flex gap-6">
+                  <div className="flex flex-col items-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
+                      <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                    </div>
+                    <div className="w-0.5 h-full bg-gray-300 mt-2"></div>
+                  </div>
+                  <div className="pb-8">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Innovation Driven</h3>
+                    <p className="text-gray-700">
+                      Constantly innovating, we introduced new techniques and materials to elevate our projects.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Timeline Item 4 */}
+                <div className="flex gap-6">
+                  <div className="flex flex-col items-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full border-2 border-gray-900 bg-white flex items-center justify-center">
+                      <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Award-Winning Excellence</h3>
+                    <p className="text-gray-700">
+                      Recognized for our exceptional work, we have received multiple industry awards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Values Section */}
       <section className="bg-gray-50 py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -46,52 +46,51 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Story Section */}
-      <section className="py-16 md:py-24 lg:py-32">
+      {/* Our Story Section with Image */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
-                Our Story
-              </p>
+            {/* Left Column - Content */}
+            <div className="order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                Building Dreams, Creating Homes
+                Our Story
               </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Founded in 2010, Giza Renovations has been at the forefront of home transformation in the region. 
-                  Our journey began with a simple mission: to help homeowners realize their dream spaces through 
-                  exceptional craftsmanship and personalized service.
-                </p>
-                <p>
-                  Over the years, we've completed hundreds of projects, from intimate bathroom renovations to 
-                  comprehensive whole-home remodels. Each project reflects our commitment to quality, attention 
-                  to detail, and our passion for creating beautiful, functional spaces.
-                </p>
-                <p>
-                  What sets us apart is our collaborative approach. We work closely with our clients throughout 
-                  every phase of the project, ensuring that their vision is brought to life with precision and care.
-                </p>
-              </div>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                Giza Renovations is a leading home remodeling company that has been transforming houses into dream homes for over a decade. Our mission is to provide exceptional craftsmanship and personalized service to our clients, ensuring their satisfaction and exceeding their expectations. With a vision to create beautiful and functional spaces, we take pride in our work and strive to deliver projects that enhance the value and comfort of every home. At Giza Renovations, our core values of integrity, professionalism, and innovation drive us to stand out in the home remodeling industry and make a positive impact on the lives of our clients.
+              </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-4xl font-bold text-brand-yellow mb-2">500+</div>
-                <p className="text-gray-600">Projects Completed</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-4xl font-bold text-brand-yellow mb-2">14+</div>
-                <p className="text-gray-600">Years Experience</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-4xl font-bold text-brand-yellow mb-2">98%</div>
-                <p className="text-gray-600">Client Satisfaction</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-4xl font-bold text-brand-yellow mb-2">50+</div>
-                <p className="text-gray-600">Expert Team Members</p>
-              </div>
+            {/* Right Column - Image */}
+            <div className="order-1 lg:order-2">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fb46ba7a89a3c47b9ae2cdbf26debb6b2?format=webp&width=1600&height=2400"
+                alt="Modern cityscape with luxury buildings at sunset"
+                className="w-full h-auto rounded-lg shadow-lg object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="bg-gray-50 py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="text-4xl md:text-5xl font-bold text-brand-yellow mb-2">500+</div>
+              <p className="text-gray-600 font-medium">Projects Completed</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="text-4xl md:text-5xl font-bold text-brand-yellow mb-2">14+</div>
+              <p className="text-gray-600 font-medium">Years Experience</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="text-4xl md:text-5xl font-bold text-brand-yellow mb-2">98%</div>
+              <p className="text-gray-600 font-medium">Client Satisfaction</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="text-4xl md:text-5xl font-bold text-brand-yellow mb-2">50+</div>
+              <p className="text-gray-600 font-medium">Expert Team Members</p>
             </div>
           </div>
         </div>

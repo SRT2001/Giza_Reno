@@ -285,25 +285,37 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-brand-dark py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+      {/* CTA Section with Background Image */}
+      <section className="relative py-16 md:py-24 w-full overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fa8d3e9969dfa42b29bcc8189f580c7d8?format=webp&width=1600&height=2400')`,
+          }}
+        >
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        {/* CTA Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-white/95 mb-10 max-w-2xl mx-auto drop-shadow-md">
             Let's discuss how we can transform your home into the space of your dreams
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-block px-8 py-4 bg-white text-gray-900 rounded text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-block px-8 py-4 bg-white text-gray-900 rounded text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
             >
               Get A Free Quote
             </Link>
             <Link
               to="/projects"
-              className="inline-block px-8 py-4 border-2 border-white text-white rounded text-lg font-semibold hover:bg-white/10 transition-colors"
+              className="inline-block px-8 py-4 border-2 border-white text-white rounded text-lg font-semibold hover:bg-white/10 transition-colors shadow-lg"
             >
               View Our Projects
             </Link>

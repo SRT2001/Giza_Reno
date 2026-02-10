@@ -264,7 +264,7 @@ export default function Index() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F3e01e85b34ed4ac28e8c9d7796c7e7b4?format=webp&width=800&height=1200')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe71d1e67c5904643894d25e402ccfc29?format=webp&width=800&height=1200')`,
           }}
         >
           {/* Dark overlay for text readability */}

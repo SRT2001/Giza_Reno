@@ -18,25 +18,28 @@ export default function About() {
 
         {/* Hero Content */}
         <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white leading-tight mb-4 drop-shadow-lg">
-              About Giza Renovations
-            </h1>
-            <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-xl drop-shadow-md">
-              Excellence in home remodeling since 2010. Transforming spaces with quality craftsmanship and innovative design.
+          <div className="max-w-3xl">
+            <p className="text-sm sm:text-base text-white/90 mb-4 drop-shadow-md">
+              Transform
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+              Excellence in Remodeling
+            </h1>
+            <p className="text-base sm:text-lg text-white/90 mb-8 max-w-2xl drop-shadow-md">
+              Giza Renovations is dedicated to providing exceptional home remodeling services that exceed expectations.
+            </p>
+            <div className="flex flex-wrap gap-4">
               <Link
-                to="/contact"
-                className="inline-block px-8 py-3 bg-white text-gray-900 rounded text-lg font-semibold hover:bg-gray-100 transition-colors"
+                to="/about"
+                className="px-6 py-3 bg-white text-gray-900 rounded text-base font-semibold hover:bg-gray-100 transition-colors"
               >
-                Schedule a Consultation
+                Learn More
               </Link>
               <Link
-                to="/projects"
-                className="inline-block px-8 py-3 border-2 border-white text-white rounded text-lg font-semibold hover:bg-white/10 transition-colors"
+                to="/contact"
+                className="px-6 py-3 border-2 border-white text-white rounded text-base font-semibold hover:bg-white/10 transition-colors"
               >
-                View Our Services
+                Contact Us
               </Link>
             </div>
           </div>

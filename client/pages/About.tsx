@@ -4,9 +4,9 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
-      <section className="relative h-[600px] md:h-[700px] lg:h-[800px] w-full overflow-hidden">
+      <section className="relative h-[400px] md:h-[450px] lg:h-[500px] w-full overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F5770ed230d7d4ff3ad4c40592be54e0e?format=webp&width=1600&height=2400')`,
@@ -17,14 +17,28 @@ export default function About() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+        <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center">
           <div className="max-w-2xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white leading-tight mb-4 drop-shadow-lg">
               About Giza Renovations
             </h1>
             <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-xl drop-shadow-md">
               Excellence in home remodeling since 2010. Transforming spaces with quality craftsmanship and innovative design.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/contact"
+                className="inline-block px-8 py-3 bg-white text-gray-900 rounded text-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Schedule a Consultation
+              </Link>
+              <Link
+                to="/projects"
+                className="inline-block px-8 py-3 border-2 border-white text-white rounded text-lg font-semibold hover:bg-white/10 transition-colors"
+              >
+                View Our Services
+              </Link>
+            </div>
           </div>
         </div>
       </section>

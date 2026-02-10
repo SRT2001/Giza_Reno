@@ -323,7 +323,7 @@ export default function About() {
             <div className="text-center">
               <div className="mb-4 overflow-hidden rounded-lg">
                 <img
-                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F237b71be794845f4a4b6e635f72cab7b?format=webp&width=1600&height=2400"
                   alt="Sarah Davis"
                   className="w-full h-auto object-cover"
                 />
@@ -339,7 +339,7 @@ export default function About() {
             <div className="text-center">
               <div className="mb-4 overflow-hidden rounded-lg">
                 <img
-                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fae990f7d4b4947bdaaf0ddf135b95dee?format=webp&width=1600&height=2400"
                   alt="David Wilson"
                   className="w-full h-auto object-cover"
                 />
@@ -355,7 +355,7 @@ export default function About() {
             <div className="text-center">
               <div className="mb-4 overflow-hidden rounded-lg">
                 <img
-                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F6380f4a2f2eb4675aa69344bf774d80b?format=webp&width=1600&height=2400"
                   alt="Mario Rossi"
                   className="w-full h-auto object-cover"
                 />
@@ -371,7 +371,7 @@ export default function About() {
             <div className="text-center">
               <div className="mb-4 overflow-hidden rounded-lg">
                 <img
-                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F6f10a5c58d1d44389d7884c51082b32e?format=webp&width=1600&height=2400"
                   alt="Robert Wayne"
                   className="w-full h-auto object-cover"
                 />
@@ -387,7 +387,7 @@ export default function About() {
             <div className="text-center">
               <div className="mb-4 overflow-hidden rounded-lg">
                 <img
-                  src="https://via.placeholder.com/400x500/E5E7EB/6B7280?text=Photo"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F1890a785f0e848478964222c94b3a40a?format=webp&width=1600&height=2400"
                   alt="Thomas Cardenaz"
                   className="w-full h-auto object-cover"
                 />

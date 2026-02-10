@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const queryClient = new QueryClient();
 
@@ -35,9 +36,13 @@ function App() {
             <Route path="/projects" element={<PlaceholderPage title="Projects" />} />
             <Route path="/about" element={<PlaceholderPage title="About Us" />} />
             <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
+            <Route path="/testimonials" element={<PlaceholderPage title="Testimonials" />} />
+            <Route path="/terms" element={<PlaceholderPage title="Terms of Service" />} />
+            <Route path="/privacy" element={<PlaceholderPage title="Privacy Policy" />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

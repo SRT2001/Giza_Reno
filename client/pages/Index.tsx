@@ -167,6 +167,97 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
+              Projects
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Transforming Homes with Excellence
+            </h2>
+            <p className="text-lg text-gray-600">
+              Explore our diverse range of completed projects.
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="space-y-8">
+            {/* Project Card 1 - Modern Kitchen Renovation */}
+            <div className="group">
+              <div className="overflow-hidden rounded-lg mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F1d11e29c7b3044eebf58b9f614dd32a1?format=webp&width=800&height=1200"
+                  alt="Modern Kitchen Renovation with sleek cabinetry and marble countertops"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Modern Kitchen Renovation
+                  </h3>
+                  <p className="text-gray-600">
+                    Experience the beauty and functionality of our kitchen renovations.
+                  </p>
+                </div>
+                <Link
+                  to="/projects"
+                  className="flex-shrink-0 flex items-center gap-2 text-gray-900 font-semibold hover:text-gray-600 transition-colors"
+                >
+                  View Project
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Project Card 2 - Luxurious Bathroom Remodel */}
+            <div className="group">
+              <div className="overflow-hidden rounded-lg mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F213c7665abde47b5840d803798176e20?format=webp&width=800&height=1200"
+                  alt="Luxurious Bathroom Remodel with modern fixtures and elegant design"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Luxurious Bathroom Remodel
+                  </h3>
+                  <p className="text-gray-600">
+                    Indulge in the elegance and comfort of our bathroom remodels.
+                  </p>
+                </div>
+                <Link
+                  to="/projects"
+                  className="flex-shrink-0 flex items-center gap-2 text-gray-900 font-semibold hover:text-gray-600 transition-colors"
+                >
+                  View Project
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* View All Button */}
+          <div className="text-center mt-12">
+            <Link
+              to="/projects"
+              className="inline-block px-8 py-3 border-2 border-gray-900 text-gray-900 rounded text-base font-semibold hover:bg-gray-900 hover:text-white transition-colors"
+            >
+              View all
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

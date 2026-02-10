@@ -9,7 +9,7 @@ export default function Index() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe7bdbb23a2704eb8930a26f6d9d2bb9b?format=webp&width=800&height=1200')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe7bdbb23a2704eb8930a26f6d9d2bb9b?format=webp&width=1600&height=2400')`,
           }}
         >
           {/* Linear gradient overlay from left to right for text readability */}

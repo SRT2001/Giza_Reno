@@ -158,24 +158,22 @@ export default function Projects() {
                 </div>
 
                 {/* Project Details - Horizontal Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-                  {/* Title */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                  {/* Title and Tags */}
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                       {project.title}
                     </h3>
-                  </div>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 border border-gray-900 text-gray-900 rounded text-sm font-medium"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-3 py-1 border border-gray-900 text-gray-900 rounded text-sm font-medium"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Description */}

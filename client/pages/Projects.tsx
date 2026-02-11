@@ -13,13 +13,6 @@ export default function Projects() {
       image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=1600&height=2400",
     },
     {
-      id: 2,
-      title: "Modern Kitchen Renovation",
-      description: "Experience the beauty and functionality of our expert kitchen remodeling services.",
-      tags: ["Contemporary", "Luxury", "Functional"],
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fa7ae7d2d55924bf0b10dc57ff4b2a395?format=webp&width=1600&height=2400",
-    },
-    {
       id: 3,
       title: "Kitchen Remodel",
       description: "Transformed an outdated kitchen into a modern and functional space.",
@@ -153,12 +146,9 @@ export default function Projects() {
 
           {/* Projects Grid */}
           <div className="space-y-16">
-            {projects.slice(2).map((project) => (
-              <div
-                key={project.id}
-                className="grid md:grid-cols-2 gap-8 items-start"
-              >
-                {/* Project Image */}
+            {projects.slice(1).map((project) => (
+              <div key={project.id} className="space-y-6">
+                {/* Project Image - Full Width */}
                 <div className="overflow-hidden rounded-lg">
                   <img
                     src={project.image}
@@ -167,14 +157,17 @@ export default function Projects() {
                   />
                 </div>
 
-                {/* Project Details */}
-                <div className="flex flex-col justify-start">
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                    {project.title}
-                  </h3>
+                {/* Project Details - Horizontal Layout */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                  {/* Title */}
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                      {project.title}
+                    </h3>
+                  </div>
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
@@ -185,9 +178,12 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <p className="text-base text-gray-700 leading-relaxed">
-                    {project.description}
-                  </p>
+                  {/* Description */}
+                  <div>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      {project.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}

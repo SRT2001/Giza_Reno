@@ -19,6 +19,20 @@ export default function Projects() {
       tags: ["Contemporary", "Luxury", "Functional"],
       image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fa7ae7d2d55924bf0b10dc57ff4b2a395?format=webp&width=1600&height=2400",
     },
+    {
+      id: 3,
+      title: "Kitchen Remodel",
+      description: "Transformed an outdated kitchen into a modern and functional space.",
+      tags: ["Residential", "Modern", "Renovation"],
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac342fa3d3a04b979b877105ab7969f5?format=webp&width=1600&height=2400",
+    },
+    {
+      id: 4,
+      title: "Bathroom Renovation",
+      description: "Created a luxurious and modern bathroom for a commercial space.",
+      tags: ["Commercial", "Luxury", "Remodel"],
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbea764b0b8664f7b803c863ff6ffad7f?format=webp&width=1600&height=2400",
+    },
   ];
 
   const nextSlide = () => {
@@ -122,24 +136,61 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Projects Grid Section - Placeholder for future content */}
-      <section className="py-16 md:py-24 lg:py-32">
+      {/* Our Past Projects Grid Section */}
+      <section className="py-16 md:py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
-              Portfolio
+              Projects
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Our Featured Projects
+              Our Past Projects
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover our portfolio of exceptional home remodeling projects
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Browse through our gallery of past projects.
             </p>
           </div>
 
-          {/* Project grid will be added here */}
-          <div className="text-center text-gray-600">
-            <p>More projects coming soon...</p>
+          {/* Projects Grid */}
+          <div className="space-y-16">
+            {projects.slice(2).map((project) => (
+              <div
+                key={project.id}
+                className="grid md:grid-cols-2 gap-8 items-start"
+              >
+                {/* Project Image */}
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+
+                {/* Project Details */}
+                <div className="flex flex-col justify-start">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    {project.title}
+                  </h3>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 border border-gray-900 text-gray-900 rounded text-sm font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <p className="text-base text-gray-700 leading-relaxed">
+                    {project.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

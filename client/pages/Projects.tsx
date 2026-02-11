@@ -335,7 +335,7 @@ export default function Projects() {
             {/* Right Column - Image */}
             <div className="overflow-hidden rounded-lg">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F8897002c67d345ca861a7ee88474ec6a?format=webp&width=1600&height=2400"
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F4a0eb737d19f4b689c5f361766c05d92?format=webp&width=1600&height=2400"
                 alt="Modern bathroom renovation"
                 className="w-full h-auto object-cover"
               />

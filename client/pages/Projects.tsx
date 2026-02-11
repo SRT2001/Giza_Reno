@@ -10,7 +10,7 @@ export default function Projects() {
       title: "Stunning Kitchen Remodel",
       description: "Explore our diverse portfolio showcasing our exceptional home remodeling projects.",
       tags: ["Contemporary", "Luxury", "Functional"],
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F5804bec49ec0414aa8711b04cc05ba6f?format=webp&width=1600&height=2400",
+      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=1600&height=2400",
     },
     {
       id: 2,

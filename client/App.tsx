@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -34,7 +35,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<PlaceholderPage title="Services" />} />
-            <Route path="/projects" element={<PlaceholderPage title="Projects" />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<PlaceholderPage title="Project Details" />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
             <Route path="/testimonials" element={<PlaceholderPage title="Testimonials" />} />

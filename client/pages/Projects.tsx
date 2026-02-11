@@ -343,6 +343,47 @@ export default function Projects() {
           </div>
         </div>
       </section>
+
+      {/* Trusted By Section */}
+      <section className="bg-gray-50 py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-center text-base md:text-lg font-medium text-gray-900 mb-8">
+            Used by the world's most average companies
+          </h3>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
+            {/* Houzz Logo */}
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F0954b31a1b8e4168a6b9f08b3c709844?format=webp&width=800"
+              alt="Houzz"
+              className="h-8 md:h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+            />
+            {/* BBB Logo */}
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fdcdf337541f849319421754a8df88cd9?format=webp&width=800"
+              alt="BBB Accredited Business"
+              className="h-12 md:h-14 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+            />
+            {/* Lowe's Logo */}
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fb0844bcc46e54e3499af151e40ac9083?format=webp&width=800"
+              alt="Lowe's Home Improvement"
+              className="h-10 md:h-12 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+            />
+            {/* Home Depot Logo */}
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F54fc52ce6e144ffdab0f5d1ed8345bb7?format=webp&width=800"
+              alt="The Home Depot"
+              className="h-10 md:h-12 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+            />
+            {/* Angie's List Logo */}
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2b426367b50248b28111cbdc73598dfc?format=webp&width=800"
+              alt="Angie's List"
+              className="h-8 md:h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
+            />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

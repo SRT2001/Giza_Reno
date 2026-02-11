@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const projects = [
     {
@@ -34,6 +35,47 @@ export default function Projects() {
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + projects.length) % projects.length);
+  };
+
+  const testimonials = [
+    {
+      id: 1,
+      quote: "The team at Giza Renovations completely transformed my outdated kitchen into a modern and functional space. I couldn't be happier with the results.",
+      name: "John Doe",
+      location: "Homeowner, Coconut Grove",
+    },
+    {
+      id: 2,
+      quote: "Outstanding work! They delivered exactly what we envisioned and exceeded our expectations in every way.",
+      name: "Jane Smith",
+      location: "Homeowner, Coral Gables",
+    },
+    {
+      id: 3,
+      quote: "Professional, reliable, and incredibly talented. Our bathroom renovation was completed on time and looks amazing.",
+      name: "Michael Johnson",
+      location: "Homeowner, Miami Beach",
+    },
+    {
+      id: 4,
+      quote: "From start to finish, the experience was seamless. The quality of work is exceptional and worth every penny.",
+      name: "Sarah Davis",
+      location: "Homeowner, Brickell",
+    },
+    {
+      id: 5,
+      quote: "They turned our vision into reality. The attention to detail and craftsmanship is unmatched.",
+      name: "David Wilson",
+      location: "Homeowner, Key Biscayne",
+    },
+  ];
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   return (
@@ -185,6 +227,79 @@ export default function Projects() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Carousel Section */}
+      <section className="py-16 md:py-24 lg:py-32 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative">
+            {/* Testimonial Content */}
+            <div className="text-center px-12 md:px-20">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={testimonial.id}
+                  className={`transition-opacity duration-500 ${
+                    index === currentTestimonial ? "opacity-100" : "opacity-0 absolute inset-0"
+                  }`}
+                >
+                  <p className="text-xl md:text-2xl lg:text-3xl font-normal text-gray-900 leading-relaxed mb-8 max-w-4xl mx-auto">
+                    {testimonial.quote.includes("Giza Renovations") ? (
+                      <>
+                        The team at <span className="font-bold">Giza Renovations</span> {testimonial.quote.split("Giza Renovations")[1]}
+                      </>
+                    ) : (
+                      testimonial.quote
+                    )}
+                  </p>
+                  <div className="text-center">
+                    <p className="text-base md:text-lg font-semibold text-gray-900 mb-1">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm md:text-base text-gray-600">
+                      {testimonial.location}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevTestimonial}
+              className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 border-2 border-gray-900 rounded-full flex items-center justify-center transition-colors hover:bg-gray-900 hover:text-white"
+              aria-label="Previous testimonial"
+            >
+              <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={nextTestimonial}
+              className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 border-2 border-gray-900 rounded-full flex items-center justify-center transition-colors hover:bg-gray-900 hover:text-white"
+              aria-label="Next testimonial"
+            >
+              <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Indicator Dots */}
+            <div className="flex justify-center gap-2 mt-12">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentTestimonial(index)}
+                  className={`w-2 h-2 rounded-full transition-colors ${
+                    index === currentTestimonial
+                      ? "bg-gray-900"
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

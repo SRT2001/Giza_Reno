@@ -304,46 +304,6 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* Left Column - Text Content */}
-            <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Transform your home with Giza
-              </h2>
-              <p className="text-lg md:text-xl text-gray-700 mb-8">
-                Schedule a consultation today and start your dream remodeling project.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/contact"
-                  className="inline-block px-8 py-3 bg-gray-900 text-white rounded text-base font-semibold hover:bg-gray-800 transition-colors text-center"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  to="/about"
-                  className="inline-block px-8 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded text-base font-semibold hover:bg-gray-50 transition-colors text-center"
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
-
-            {/* Right Column - Image */}
-            <div className="overflow-hidden rounded-lg">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F4a0eb737d19f4b689c5f361766c05d92?format=webp&width=1600&height=2400"
-                alt="Modern bathroom renovation"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Trusted By Section */}
       <section className="bg-gray-50 py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -381,6 +341,46 @@ export default function Projects() {
               alt="Angie's List"
               className="h-8 md:h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Column - Text Content */}
+            <div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                Transform your home with Giza
+              </h2>
+              <p className="text-lg md:text-xl text-gray-700 mb-8">
+                Schedule a consultation today and start your dream remodeling project.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-block px-8 py-3 bg-gray-900 text-white rounded text-base font-semibold hover:bg-gray-800 transition-colors text-center"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to="/about"
+                  className="inline-block px-8 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded text-base font-semibold hover:bg-gray-50 transition-colors text-center"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Column - Image */}
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F4a0eb737d19f4b689c5f361766c05d92?format=webp&width=1600&height=2400"
+                alt="Modern bathroom renovation"
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

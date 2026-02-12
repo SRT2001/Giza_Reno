@@ -116,7 +116,7 @@ export default function Services() {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-12">
             {/* Kitchen Remodeling */}
             <div className="flex flex-col">
-              <div className="overflow-hidden rounded-lg mb-6 h-[400px]">
+              <div className="overflow-hidden rounded-lg mb-6 h-[280px]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2eec984ebff848cfad5cb2189c59ea88?format=webp&width=2400&height=3600"
                   alt="Kitchen Remodeling"
@@ -133,7 +133,7 @@ export default function Services() {
 
             {/* Bathroom Renovations */}
             <div className="flex flex-col">
-              <div className="overflow-hidden rounded-lg mb-6 h-[400px]">
+              <div className="overflow-hidden rounded-lg mb-6 h-[280px]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac5c3ddf2edb4260b85f7edc9669f170?format=webp&width=2400&height=3600"
                   alt="Bathroom Renovations"
@@ -150,7 +150,7 @@ export default function Services() {
 
             {/* Home Additions */}
             <div className="flex flex-col">
-              <div className="overflow-hidden rounded-lg mb-6 h-[400px]">
+              <div className="overflow-hidden rounded-lg mb-6 h-[280px]">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fb7f0713cdfe147ce807cf8a42de328c1?format=webp&width=2400&height=3600"
                   alt="Home Additions"

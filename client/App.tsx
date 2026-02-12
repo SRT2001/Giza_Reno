@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Services from "./pages/Services";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -34,7 +35,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/services" element={<PlaceholderPage title="Services" />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<PlaceholderPage title="Project Details" />} />
             <Route path="/about" element={<About />} />

@@ -59,7 +59,7 @@ export default function Services() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F76a0742abef442269e1fa900dd20b789?format=webp&width=1600&height=2400')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F76a0742abef442269e1fa900dd20b789?format=webp&width=2400&height=3600')`,
           }}
         >
           {/* Gradient overlay for text readability */}
@@ -116,11 +116,11 @@ export default function Services() {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-12">
             {/* Kitchen Remodeling */}
             <div className="flex flex-col">
-              <div className="overflow-hidden rounded-lg mb-6">
+              <div className="overflow-hidden rounded-lg mb-6 h-[400px]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2eec984ebff848cfad5cb2189c59ea88?format=webp&width=1600&height=2400"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2eec984ebff848cfad5cb2189c59ea88?format=webp&width=2400&height=3600"
                   alt="Kitchen Remodeling"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
@@ -133,11 +133,11 @@ export default function Services() {
 
             {/* Bathroom Renovations */}
             <div className="flex flex-col">
-              <div className="overflow-hidden rounded-lg mb-6">
+              <div className="overflow-hidden rounded-lg mb-6 h-[400px]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac5c3ddf2edb4260b85f7edc9669f170?format=webp&width=1600&height=2400"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac5c3ddf2edb4260b85f7edc9669f170?format=webp&width=2400&height=3600"
                   alt="Bathroom Renovations"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
@@ -150,11 +150,11 @@ export default function Services() {
 
             {/* Home Additions */}
             <div className="flex flex-col">
-              <div className="overflow-hidden rounded-lg mb-6">
+              <div className="overflow-hidden rounded-lg mb-6 h-[400px]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fb7f0713cdfe147ce807cf8a42de328c1?format=webp&width=1600&height=2400"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fb7f0713cdfe147ce807cf8a42de328c1?format=webp&width=2400&height=3600"
                   alt="Home Additions"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
@@ -229,7 +229,7 @@ export default function Services() {
           {/* Full Width Image */}
           <div className="overflow-hidden rounded-lg">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F85718f34dcc044a1b147ef7bab35b3c1?format=webp&width=1600&height=2400"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F85718f34dcc044a1b147ef7bab35b3c1?format=webp&width=2400&height=3600"
               alt="Modern luxury home with pool"
               className="w-full h-auto object-cover"
             />
@@ -274,9 +274,9 @@ export default function Services() {
             {/* Right Column - Image */}
             <div className="overflow-hidden rounded-lg">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fd8b81825ea184b9c8f2185fe352d3a64?format=webp&width=1600&height=2400"
-                alt="Modern bathroom design"
-                className="w-full h-auto object-cover"
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fd8b81825ea184b9c8f2185fe352d3a64?format=webp&width=2400&height=3600"
+              alt="Modern bathroom design"
+              className="w-full h-auto object-cover"
               />
             </div>
           </div>

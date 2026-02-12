@@ -68,7 +68,7 @@ export default function Services() {
             <div className="flex flex-col">
               <div className="overflow-hidden rounded-lg mb-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe227a529c54d43888b9a4facc5e73c05?format=webp&width=1600&height=2400"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2eec984ebff848cfad5cb2189c59ea88?format=webp&width=1600&height=2400"
                   alt="Kitchen Remodeling"
                   className="w-full h-auto object-cover"
                 />
@@ -85,7 +85,7 @@ export default function Services() {
             <div className="flex flex-col">
               <div className="overflow-hidden rounded-lg mb-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F15bf40a4768b4808b95248ecc614873d?format=webp&width=1600&height=2400"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac5c3ddf2edb4260b85f7edc9669f170?format=webp&width=1600&height=2400"
                   alt="Bathroom Renovations"
                   className="w-full h-auto object-cover"
                 />
@@ -102,7 +102,7 @@ export default function Services() {
             <div className="flex flex-col">
               <div className="overflow-hidden rounded-lg mb-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F30020f3b01084267a961cd4360678e25?format=webp&width=1600&height=2400"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fb7f0713cdfe147ce807cf8a42de328c1?format=webp&width=1600&height=2400"
                   alt="Home Additions"
                   className="w-full h-auto object-cover"
                 />

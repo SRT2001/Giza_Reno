@@ -45,6 +45,97 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      {/* Services Section */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="mb-12 md:mb-16">
+            <p className="text-sm sm:text-base text-gray-600 mb-4">
+              Transform
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+              Expert Home Remodeling Services<br />for Your Dream Space
+            </h2>
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl">
+              At Giza Renovations, we offer a wide range of services to transform your home into the perfect space for you and your family. From kitchen remodeling to bathroom renovations, home additions to outdoor living spaces, our team of experts will bring your vision to life.
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-12">
+            {/* Kitchen Remodeling */}
+            <div className="flex flex-col">
+              <div className="overflow-hidden rounded-lg mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe227a529c54d43888b9a4facc5e73c05?format=webp&width=1600&height=2400"
+                  alt="Kitchen Remodeling"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                Kitchen Remodeling
+              </h3>
+              <p className="text-base text-gray-700">
+                Upgrade your kitchen with our professional remodeling services.
+              </p>
+            </div>
+
+            {/* Bathroom Renovations */}
+            <div className="flex flex-col">
+              <div className="overflow-hidden rounded-lg mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F15bf40a4768b4808b95248ecc614873d?format=webp&width=1600&height=2400"
+                  alt="Bathroom Renovations"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                Bathroom Renovations
+              </h3>
+              <p className="text-base text-gray-700">
+                Create a relaxing and stylish bathroom with our renovation expertise.
+              </p>
+            </div>
+
+            {/* Home Additions */}
+            <div className="flex flex-col">
+              <div className="overflow-hidden rounded-lg mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F30020f3b01084267a961cd4360678e25?format=webp&width=1600&height=2400"
+                  alt="Home Additions"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">
+                Home Additions
+              </h3>
+              <p className="text-base text-gray-700">
+                Expand your living space with our seamless home addition solutions.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-4">
+            <Link
+              to="/about"
+              className="inline-block px-6 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded text-base font-semibold hover:bg-gray-50 transition-colors"
+            >
+              Learn More
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3 text-gray-900 text-base font-semibold hover:gap-3 transition-all"
+            >
+              Contact Us
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

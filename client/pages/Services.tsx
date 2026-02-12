@@ -140,7 +140,7 @@ export default function Services() {
       {/* Customized Solutions Section */}
       <section className="bg-white py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 mb-12">
             {/* Left Column - Text Content */}
             <div>
               <p className="text-sm sm:text-base text-gray-600 mb-4">
@@ -149,6 +149,10 @@ export default function Services() {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
                 Customized Solutions for Your Dream Home
               </h2>
+            </div>
+
+            {/* Right Column - Description and Buttons */}
+            <div>
               <p className="text-base sm:text-lg text-gray-700 mb-8">
                 At Giza Renovations, we understand that your home is a reflection of your unique style and personality. Our team of skilled craftsmen is dedicated to delivering exceptional results that exceed your expectations. With our commitment to customer satisfaction, we ensure that every project is tailored to your specific needs and preferences.
               </p>
@@ -170,15 +174,15 @@ export default function Services() {
                 </Link>
               </div>
             </div>
+          </div>
 
-            {/* Right Column - Image */}
-            <div className="overflow-hidden rounded-lg">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F85718f34dcc044a1b147ef7bab35b3c1?format=webp&width=1600&height=2400"
-                alt="Modern luxury home with pool"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+          {/* Full Width Image */}
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F85718f34dcc044a1b147ef7bab35b3c1?format=webp&width=1600&height=2400"
+              alt="Modern luxury home with pool"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </section>

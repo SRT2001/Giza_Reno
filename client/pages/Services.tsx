@@ -136,6 +136,52 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      {/* Customized Solutions Section */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Column - Text Content */}
+            <div>
+              <p className="text-sm sm:text-base text-gray-600 mb-4">
+                Transform
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                Customized Solutions for Your Dream Home
+              </h2>
+              <p className="text-base sm:text-lg text-gray-700 mb-8">
+                At Giza Renovations, we understand that your home is a reflection of your unique style and personality. Our team of skilled craftsmen is dedicated to delivering exceptional results that exceed your expectations. With our commitment to customer satisfaction, we ensure that every project is tailored to your specific needs and preferences.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  to="/about"
+                  className="inline-block px-6 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded text-base font-semibold hover:bg-gray-50 transition-colors"
+                >
+                  Learn More
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 text-gray-900 text-base font-semibold hover:gap-3 transition-all"
+                >
+                  Contact Us
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Column - Image */}
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F85718f34dcc044a1b147ef7bab35b3c1?format=webp&width=1600&height=2400"
+                alt="Modern luxury home with pool"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

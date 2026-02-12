@@ -6,6 +6,17 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+          {/* Logo Column - First */}
+          <div className="flex justify-start items-start">
+            <Link to="/" className="inline-block">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F5169604d52764ef4916dbba8a5e3c3a0"
+                alt="Giza Renovations"
+                className="h-12 w-auto"
+              />
+            </Link>
+          </div>
+
           {/* About Us Column */}
           <div>
             <h3 className="text-base font-bold text-gray-900 mb-4">About Us</h3>
@@ -31,17 +42,6 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-
-          {/* Logo Column */}
-          <div className="lg:col-span-1 flex justify-center items-start">
-            <Link to="/" className="inline-block">
-              <img 
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F5169604d52764ef4916dbba8a5e3c3a0" 
-                alt="Giza Renovations" 
-                className="h-12 w-auto"
-              />
-            </Link>
           </div>
 
           {/* Resources Column */}

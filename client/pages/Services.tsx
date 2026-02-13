@@ -187,6 +187,186 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Our Offer Section */}
+      <section className="bg-gray-50 py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="mb-12 md:mb-16">
+            <p className="text-sm sm:text-base text-gray-900 mb-2 font-medium">
+              Affordable
+            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Our offer
+            </h2>
+            <p className="text-base sm:text-lg text-gray-900">
+              Our pricing is designed to fit your budget and project requirements.
+            </p>
+          </div>
+
+          {/* Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left Column - Value Props */}
+            <div className="space-y-8 md:space-y-10">
+              {/* Quality */}
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 4L18.5 9L24 10L20 14L21 20L16 17L11 20L12 14L8 10L13.5 9L16 4Z" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round"/>
+                    <path d="M16 4L18.5 9L24 10L20 14L21 20L16 17L11 20L12 14L8 10L13.5 9L16 4Z" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" transform="translate(0, 8) scale(0.8, 0.8)" opacity="0.5"/>
+                    <path d="M16 4L18.5 9L24 10L20 14L21 20L16 17L11 20L12 14L8 10L13.5 9L16 4Z" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" transform="translate(0, 12) scale(0.6, 0.6)" opacity="0.3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                    Quality
+                  </h3>
+                  <p className="text-base text-gray-700">
+                    High-quality materials and craftsmanship
+                  </p>
+                </div>
+              </div>
+
+              {/* Efficient */}
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="12" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M16 8V16L20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M24 12L28 12M4 12L8 12M16 4V8M16 24V28" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                    Efficient
+                  </h3>
+                  <p className="text-base text-gray-700">
+                    Timely project completion
+                  </p>
+                </div>
+              </div>
+
+              {/* Integrity */}
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="10" r="4" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M6 24C6 20 8 18 12 18C16 18 18 20 18 24" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="22" cy="10" r="4" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M16 24C16 20 18 18 22 18C26 18 28 20 28 24" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                    integrity
+                  </h3>
+                  <p className="text-base text-gray-700">
+                    Professional and experienced team
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Pricing Card */}
+            <div className="border-2 border-gray-900 bg-white p-8 md:p-10">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                  Standard Plan
+                </h3>
+                <p className="text-sm md:text-base text-gray-700">
+                  payment divided into three parts<br />
+                  in accordance to phase completions
+                </p>
+              </div>
+
+              <div className="border-t border-gray-300 pt-8 mb-8">
+                <p className="text-sm md:text-base font-medium text-gray-900 mb-6">
+                  Includes:
+                </p>
+
+                <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 mb-8">
+                  {/* Left Column Features */}
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Free consultation</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Flexible payment options</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Quality assurance guarantee</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Dedicated project manager</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Transparent pricing</span>
+                    </div>
+                  </div>
+
+                  {/* Right Column Features */}
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">24/7 customer support</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Expert design advice</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Timely project updates</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Detailed project timeline</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm md:text-base text-gray-900">Satisfaction guarantee</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t border-gray-300 pt-8">
+                <Link
+                  to="/contact"
+                  className="block w-full py-4 bg-gray-900 text-white text-center text-base font-semibold hover:bg-gray-800 transition-colors"
+                >
+                  Get started
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

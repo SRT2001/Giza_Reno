@@ -233,6 +233,71 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
+            {/* Step-by-Step Process */}
+            <div className="flex flex-col items-start">
+              <div className="mb-6">
+                <svg className="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="12" y="8" width="40" height="48" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <line x1="20" y1="20" x2="32" y2="20" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="36" y1="20" x2="44" y2="20" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="20" y1="28" x2="32" y2="28" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="36" y1="28" x2="44" y2="28" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="20" y1="36" x2="32" y2="36" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="36" y1="36" x2="44" y2="36" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="20" y1="44" x2="32" y2="44" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="36" y1="44" x2="44" y2="44" stroke="currentColor" strokeWidth="2"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Step-by-Step Process
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Our home remodeling process is designed to be seamless and stress-free. From the initial consultation to project completion, we ensure clear communication and exceptional craftsmanship.
+              </p>
+            </div>
+
+            {/* Consultation and Planning */}
+            <div className="flex flex-col items-start">
+              <div className="mb-6">
+                <svg className="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M14 48C14 40 18 36 24 36C30 36 34 40 34 48" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <circle cx="44" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M34 48C34 40 38 36 44 36C50 36 54 40 54 48" stroke="currentColor" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Consultation and Planning
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                During the consultation phase, our team of experts will discuss your remodeling goals, assess your space, and provide recommendations tailored to your needs and budget.
+              </p>
+            </div>
+
+            {/* Construction and Installation */}
+            <div className="flex flex-col items-start">
+              <div className="mb-6">
+                <svg className="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="28" cy="16" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M18 44C18 36 22 32 28 32C34 32 38 36 38 44" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M45 28L52 35M52 35L45 42M52 35H40" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Construction and Installation
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Once the planning is complete, our skilled craftsmen will begin the construction and installation process, ensuring attention to detail and high-quality workmanship.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Offer Section */}
       <section className="bg-gray-50 py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -408,71 +473,6 @@ export default function Services() {
                   Get started
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="bg-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
-            {/* Step-by-Step Process */}
-            <div className="flex flex-col items-start">
-              <div className="mb-6">
-                <svg className="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="12" y="8" width="40" height="48" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <line x1="20" y1="20" x2="32" y2="20" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="36" y1="20" x2="44" y2="20" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="20" y1="28" x2="32" y2="28" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="36" y1="28" x2="44" y2="28" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="20" y1="36" x2="32" y2="36" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="36" y1="36" x2="44" y2="36" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="20" y1="44" x2="32" y2="44" stroke="currentColor" strokeWidth="2"/>
-                  <line x1="36" y1="44" x2="44" y2="44" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Step-by-Step Process
-              </h3>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Our home remodeling process is designed to be seamless and stress-free. From the initial consultation to project completion, we ensure clear communication and exceptional craftsmanship.
-              </p>
-            </div>
-
-            {/* Consultation and Planning */}
-            <div className="flex flex-col items-start">
-              <div className="mb-6">
-                <svg className="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M14 48C14 40 18 36 24 36C30 36 34 40 34 48" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <circle cx="44" cy="20" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M34 48C34 40 38 36 44 36C50 36 54 40 54 48" stroke="currentColor" strokeWidth="2" fill="none"/>
-                </svg>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Consultation and Planning
-              </h3>
-              <p className="text-base text-gray-700 leading-relaxed">
-                During the consultation phase, our team of experts will discuss your remodeling goals, assess your space, and provide recommendations tailored to your needs and budget.
-              </p>
-            </div>
-
-            {/* Construction and Installation */}
-            <div className="flex flex-col items-start">
-              <div className="mb-6">
-                <svg className="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="28" cy="16" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M18 44C18 36 22 32 28 32C34 32 38 36 38 44" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M45 28L52 35M52 35L45 42M52 35H40" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Construction and Installation
-              </h3>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Once the planning is complete, our skilled craftsmen will begin the construction and installation process, ensuring attention to detail and high-quality workmanship.
-              </p>
             </div>
           </div>
         </div>

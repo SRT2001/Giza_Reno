@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -39,7 +40,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<PlaceholderPage title="Project Details" />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/testimonials" element={<PlaceholderPage title="Testimonials" />} />
             <Route path="/terms" element={<PlaceholderPage title="Terms of Service" />} />
             <Route path="/privacy" element={<PlaceholderPage title="Privacy Policy" />} />

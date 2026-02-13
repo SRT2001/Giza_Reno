@@ -9,7 +9,7 @@ export default function Contact() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe683fd60462c458c977ddd99947ed59d?format=webp&width=2400&height=1600')`,
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F4ba7cd5181a7426abd3d157601804488?format=webp&width=2400&height=1600')`,
           }}
         >
           {/* Gradient overlay for text readability */}

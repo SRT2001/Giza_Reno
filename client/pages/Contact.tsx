@@ -44,6 +44,256 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Left Column - Contact Info */}
+            <div>
+              <p className="text-sm sm:text-base text-gray-900 mb-4 font-medium">
+                Connect
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Your details
+              </h2>
+              <p className="text-base sm:text-lg text-gray-700 mb-8">
+                Share your project scope and timeline with us
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <a href="mailto:hello@gizarenovation.com" className="text-base text-gray-900 hover:underline">
+                    hello@gizarenovation.com
+                  </a>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <a href="tel:+15550000000" className="text-base text-gray-900 hover:underline">
+                    +1 (555) 000-0000
+                  </a>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span className="text-base text-gray-900">
+                    123 Sample St, Sydney NSW 2000 AU
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Contact Form */}
+            <div>
+              <form className="space-y-6">
+                {/* First Name and Last Name */}
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-900 mb-2">
+                      First name
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      className="w-full px-4 py-3 border border-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-gray-900"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-900 mb-2">
+                      Last name
+                    </label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      className="w-full px-4 py-3 border border-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-gray-900"
+                    />
+                  </div>
+                </div>
+
+                {/* Email and Phone Number */}
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="w-full px-4 py-3 border border-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-gray-900"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
+                      Phone number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      className="w-full px-4 py-3 border border-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-gray-900"
+                    />
+                  </div>
+                </div>
+
+                {/* What's your inquiry about? */}
+                <div>
+                  <label htmlFor="inquiry" className="block text-sm font-medium text-gray-900 mb-2">
+                    What's your inquiry about?
+                  </label>
+                  <select
+                    id="inquiry"
+                    name="inquiry"
+                    className="w-full px-4 py-3 border border-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-gray-900 bg-white appearance-none"
+                    style={{
+                      backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
+                      backgroundPosition: 'right 1rem center',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundSize: '1.5em 1.5em',
+                    }}
+                  >
+                    <option value="">Select one...</option>
+                    <option value="kitchen">Kitchen Remodeling</option>
+                    <option value="bathroom">Bathroom Renovation</option>
+                    <option value="addition">Home Addition</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                {/* How would you describe yourself? */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-900 mb-4">
+                    How would you describe yourself?
+                  </label>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="homeowner"
+                        name="userType"
+                        value="homeowner"
+                        className="w-4 h-4 border-gray-900"
+                      />
+                      <label htmlFor="homeowner" className="text-sm text-gray-900">
+                        Homeowner
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="interior-designer"
+                        name="userType"
+                        value="interior-designer"
+                        className="w-4 h-4 border-gray-900"
+                      />
+                      <label htmlFor="interior-designer" className="text-sm text-gray-900">
+                        Interior designer
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="architect"
+                        name="userType"
+                        value="architect"
+                        className="w-4 h-4 border-gray-900"
+                      />
+                      <label htmlFor="architect" className="text-sm text-gray-900">
+                        Architect
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="property-developer"
+                        name="userType"
+                        value="property-developer"
+                        className="w-4 h-4 border-gray-900"
+                      />
+                      <label htmlFor="property-developer" className="text-sm text-gray-900">
+                        Property developer
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="real-estate"
+                        name="userType"
+                        value="real-estate"
+                        className="w-4 h-4 border-gray-900"
+                      />
+                      <label htmlFor="real-estate" className="text-sm text-gray-900">
+                        Real estate agent
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        id="other"
+                        name="userType"
+                        value="other"
+                        className="w-4 h-4 border-gray-900"
+                      />
+                      <label htmlFor="other" className="text-sm text-gray-900">
+                        Other
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={6}
+                    placeholder="Tell us more..."
+                    className="w-full px-4 py-3 border border-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-gray-900 resize-none"
+                  />
+                </div>
+
+                {/* Terms Checkbox */}
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    className="w-4 h-4 mt-1 border-gray-900 rounded"
+                  />
+                  <label htmlFor="terms" className="text-sm text-gray-900">
+                    I agree to the terms
+                  </label>
+                </div>
+
+                {/* Submit Button */}
+                <div>
+                  <button
+                    type="submit"
+                    className="px-8 py-4 bg-gray-900 text-white rounded text-base font-semibold hover:bg-gray-800 transition-colors"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

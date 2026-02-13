@@ -410,6 +410,69 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <section className="bg-gray-100 py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Column - Location Information */}
+            <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+              <div className="mb-8">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                  Visit our showroom
+                </h2>
+                <p className="text-base sm:text-lg text-gray-700">
+                  Stop by our Miami showroom to explore design samples and discuss your renovation project with our team.
+                </p>
+              </div>
+
+              <div className="space-y-8">
+                {/* Location */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Location</h3>
+                  <p className="text-base text-gray-700 mb-2">Miami</p>
+                  <p className="text-sm text-gray-600">
+                    123 Sample St, Miami<br />
+                    FL 33101, USA
+                  </p>
+                  <button className="mt-4 px-6 py-2 bg-gray-900 text-white rounded text-sm font-semibold hover:bg-gray-800 transition-colors">
+                    Get directions
+                  </button>
+                </div>
+
+                {/* Hours */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Hours</h3>
+                  <p className="text-base text-gray-700">Monday - Friday</p>
+                  <p className="text-sm text-gray-600">9 am to 6 pm EST (toll free)</p>
+                </div>
+
+                {/* Call Directly */}
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Call directly</h3>
+                  <a href="tel:+15550000000" className="text-base text-gray-700 hover:underline">
+                    +1 (555) 000-0000
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Map */}
+            <div className="rounded-lg overflow-hidden shadow-lg h-[400px] md:h-[500px]">
+              <iframe
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Giza Renovations Miami Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.1234567890!2d-80.19!3d25.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b2b2b2b2b2b%3A0x1234567890!2sDowntown%20Miami!5e0!3m2!1sen!2sus!4v1234567890"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

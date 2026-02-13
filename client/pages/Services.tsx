@@ -187,6 +187,52 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Designing and Building Beautiful Spaces Section */}
+      <section className="bg-white py-16 md:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Left Column - Text Content */}
+            <div>
+              <p className="text-sm sm:text-base text-gray-600 mb-4">
+                Quality
+              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                Designing and Building Beautiful Spaces
+              </h2>
+              <p className="text-base sm:text-lg text-gray-700 mb-8">
+                At Giza Renovations, we pride ourselves on our unique design-to-build process. From concept to completion, our team of experts will work closely with you to create beautiful and functional spaces that exceed your expectations. With a focus on sustainability, we use eco-friendly materials and practices to minimize our environmental impact.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  to="/about"
+                  className="inline-block px-6 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded text-base font-semibold hover:bg-gray-50 transition-colors"
+                >
+                  Learn More
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 text-gray-900 text-base font-semibold hover:gap-3 transition-all"
+                >
+                  Contact Us
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Column - Image */}
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fd8b81825ea184b9c8f2185fe352d3a64?format=webp&width=2400&height=3600"
+              alt="Modern bathroom design"
+              className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Offer Section */}
       <section className="bg-gray-50 py-16 md:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -478,52 +524,6 @@ export default function Services() {
               alt="Modern luxury home with pool"
               className="w-full h-auto object-cover"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* Designing and Building Beautiful Spaces Section */}
-      <section className="bg-white py-16 md:py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            {/* Left Column - Text Content */}
-            <div>
-              <p className="text-sm sm:text-base text-gray-600 mb-4">
-                Quality
-              </p>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                Designing and Building Beautiful Spaces
-              </h2>
-              <p className="text-base sm:text-lg text-gray-700 mb-8">
-                At Giza Renovations, we pride ourselves on our unique design-to-build process. From concept to completion, our team of experts will work closely with you to create beautiful and functional spaces that exceed your expectations. With a focus on sustainability, we use eco-friendly materials and practices to minimize our environmental impact.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  to="/about"
-                  className="inline-block px-6 py-3 bg-white text-gray-900 border-2 border-gray-900 rounded text-base font-semibold hover:bg-gray-50 transition-colors"
-                >
-                  Learn More
-                </Link>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3 text-gray-900 text-base font-semibold hover:gap-3 transition-all"
-                >
-                  Contact Us
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
-            {/* Right Column - Image */}
-            <div className="overflow-hidden rounded-lg">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fd8b81825ea184b9c8f2185fe352d3a64?format=webp&width=2400&height=3600"
-              alt="Modern bathroom design"
-              className="w-full h-auto object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>

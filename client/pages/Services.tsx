@@ -315,7 +315,7 @@ export default function Services() {
           </div>
 
           {/* Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Value Props */}
             <div className="space-y-8 md:space-y-10">
               {/* Quality */}

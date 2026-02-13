@@ -32,11 +32,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/testimonials" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Testimonials
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Contact Us
                 </Link>

@@ -11,6 +11,8 @@ export default function Index() {
           style={{
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe7bdbb23a2704eb8930a26f6d9d2bb9b?format=webp&width=1600&height=2400')`,
           }}
+          role="img"
+          aria-label="Elegant modern home interior showcasing professional renovation work by Giza Renovations"
         >
           {/* Linear gradient overlay from left to right for text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10"></div>
@@ -52,8 +54,11 @@ export default function Index() {
             <div className="order-2 lg:order-1">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F15f789b43626491faf6861b10502ffd3?format=webp&width=1600&height=2400"
-                alt="Modern kitchen renovation with bar stools and dining area"
+                alt="Contemporary open-concept kitchen remodel featuring white cabinetry, marble waterfall island, modern bar stools, and sophisticated pendant lighting - Giza Renovations Miami project"
                 className="w-full h-auto rounded-lg shadow-lg object-cover"
+                loading="lazy"
+                width="1600"
+                height="2400"
               />
             </div>
 
@@ -74,22 +79,22 @@ export default function Index() {
               {/* Feature List */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
-                  <span className="text-gray-900 font-medium">Experienced Professionals</span>
+                  <span className="text-gray-900 font-medium">Experienced Professionals with 15+ Years in Home Renovation</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                   </svg>
-                  <span className="text-gray-900 font-medium">Quality Materials</span>
+                  <span className="text-gray-900 font-medium">Premium Materials from Trusted Brands & Suppliers</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
-                  <span className="text-gray-900 font-medium">Personalized Service</span>
+                  <span className="text-gray-900 font-medium">Personalized Design & Project Management</span>
                 </div>
               </div>
 
@@ -106,7 +111,7 @@ export default function Index() {
                   className="px-6 py-3 bg-transparent text-gray-900 rounded text-base font-semibold hover:text-gray-600 transition-colors text-center flex items-center justify-center gap-2"
                 >
                   Get Started
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
@@ -135,22 +140,22 @@ export default function Index() {
               {/* Feature List */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
-                  <span className="text-gray-900 font-medium">Revitalize your kitchen with our expert remodeling solutions.</span>
+                  <span className="text-gray-900 font-medium">Kitchen Remodeling: Custom cabinetry, countertops, and modern appliances</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
-                  <span className="text-gray-900 font-medium">Upgrade your bathroom with our innovative design concepts.</span>
+                  <span className="text-gray-900 font-medium">Bathroom Renovations: Spa-like retreats with luxury fixtures and finishes</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                   </svg>
-                  <span className="text-gray-900 font-medium">Expand your living space with our seamless home extension solutions.</span>
+                  <span className="text-gray-900 font-medium">Home Extensions: Seamless additions that expand your living space</span>
                 </div>
               </div>
             </div>
@@ -159,8 +164,11 @@ export default function Index() {
             <div className="order-2 lg:order-2">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2cbb7f16d2704d39bf08b12c7eb723b3?format=webp&width=1600&height=2400"
-                alt="Modern luxury home with pool and outdoor living space"
+                alt="Stunning luxury home exterior renovation featuring modern architecture, infinity pool, outdoor entertainment area, and contemporary landscaping in Miami - Giza Renovations portfolio"
                 className="w-full h-auto rounded-lg shadow-lg object-cover"
+                loading="lazy"
+                width="1600"
+                height="2400"
               />
             </div>
           </div>
@@ -190,8 +198,11 @@ export default function Index() {
               <div className="overflow-hidden rounded-lg mb-6">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F1d11e29c7b3044eebf58b9f614dd32a1?format=webp&width=1600&height=2400"
-                  alt="Modern Kitchen Renovation with sleek cabinetry and marble countertops"
+                  alt="Award-winning modern kitchen renovation with sleek custom white cabinetry, grey veined marble countertops, stainless steel appliances, and designer pendant lighting - South Florida home remodel by Giza Renovations"
                   className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                  width="1600"
+                  height="2400"
                 />
               </div>
               <div className="flex items-start justify-between gap-4">
@@ -200,15 +211,16 @@ export default function Index() {
                     Modern Kitchen Renovation
                   </h3>
                   <p className="text-gray-600">
-                    Experience the beauty and functionality of our kitchen renovations.
+                    Complete kitchen transformation featuring custom cabinetry, quartz countertops, and state-of-the-art appliances.
                   </p>
                 </div>
                 <Link
                   to="/projects"
                   className="flex-shrink-0 flex items-center gap-2 text-gray-900 font-semibold hover:text-gray-600 transition-colors"
+                  aria-label="View Modern Kitchen Renovation project details"
                 >
                   View Project
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
@@ -220,8 +232,11 @@ export default function Index() {
               <div className="overflow-hidden rounded-lg mb-6">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F213c7665abde47b5840d803798176e20?format=webp&width=1600&height=2400"
-                  alt="Luxurious Bathroom Remodel with modern fixtures and elegant design"
+                  alt="Luxurious master bathroom remodel showcasing spa-inspired design with frameless glass shower, freestanding soaking tub, dual vanity with marble countertops, and ambient lighting - Miami Beach renovation by Giza Renovations"
                   className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                  width="1600"
+                  height="2400"
                 />
               </div>
               <div className="flex items-start justify-between gap-4">
@@ -230,15 +245,16 @@ export default function Index() {
                     Luxurious Bathroom Remodel
                   </h3>
                   <p className="text-gray-600">
-                    Indulge in the elegance and comfort of our bathroom remodels.
+                    Spa-inspired master bathroom featuring custom tile work, frameless glass shower, and premium fixtures.
                   </p>
                 </div>
                 <Link
                   to="/projects"
                   className="flex-shrink-0 flex items-center gap-2 text-gray-900 font-semibold hover:text-gray-600 transition-colors"
+                  aria-label="View Luxurious Bathroom Remodel project details"
                 >
                   View Project
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
@@ -266,6 +282,8 @@ export default function Index() {
           style={{
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fe71d1e67c5904643894d25e402ccfc29?format=webp&width=1600&height=2400')`,
           }}
+          role="img"
+          aria-label="Beautiful renovated home interior with modern design elements and professional craftsmanship"
         >
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-black/40"></div>

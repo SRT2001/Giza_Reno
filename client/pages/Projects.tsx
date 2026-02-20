@@ -1,33 +1,142 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+interface Project {
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+  tags: string[];
+  date: string;
+  body?: string;
+}
+
+interface Testimonial {
+  slug: string;
+  name: string;
+  location: string;
+  project: string;
+  rating: number;
+  body: string;
+  date: string;
+}
+
+// Fallback data in case CMS content is not available
+const fallbackProjects: Project[] = [
+  {
+    slug: "stunning-kitchen-remodel",
+    title: "Stunning Kitchen Remodel",
+    description: "Explore our diverse portfolio showcasing our exceptional home remodeling projects.",
+    tags: ["Contemporary", "Luxury", "Functional"],
+    image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=1600&height=2400",
+    category: "Residential",
+    date: "2024-01-15",
+  },
+  {
+    slug: "kitchen-remodel-2",
+    title: "Kitchen Remodel",
+    description: "Transformed an outdated kitchen into a modern and functional space.",
+    tags: ["Residential", "Modern", "Renovation"],
+    image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac342fa3d3a04b979b877105ab7969f5?format=webp&width=1600&height=2400",
+    category: "Residential",
+    date: "2024-02-10",
+  },
+  {
+    slug: "bathroom-renovation",
+    title: "Bathroom Renovation",
+    description: "Created a luxurious and modern bathroom for a commercial space.",
+    tags: ["Commercial", "Luxury", "Remodel"],
+    image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbea764b0b8664f7b803c863ff6ffad7f?format=webp&width=1600&height=2400",
+    category: "Commercial",
+    date: "2024-03-05",
+  },
+];
+
+const fallbackTestimonials: Testimonial[] = [
+  {
+    slug: "john-doe",
+    body: "The team at Giza Renovations completely transformed my outdated kitchen into a modern and functional space. I couldn't be happier with the results.",
+    name: "John Doe",
+    location: "Homeowner, Coconut Grove",
+    project: "Kitchen Remodel",
+    rating: 5,
+    date: "2024-01-20",
+  },
+  {
+    slug: "jane-smith",
+    body: "Outstanding work! They delivered exactly what we envisioned and exceeded our expectations in every way.",
+    name: "Jane Smith",
+    location: "Homeowner, Coral Gables",
+    project: "Bathroom Remodel",
+    rating: 5,
+    date: "2024-02-15",
+  },
+  {
+    slug: "michael-johnson",
+    body: "Professional, reliable, and incredibly talented. Our bathroom renovation was completed on time and looks amazing.",
+    name: "Michael Johnson",
+    location: "Homeowner, Miami Beach",
+    project: "Full Home Renovation",
+    rating: 5,
+    date: "2024-03-01",
+  },
+  {
+    slug: "sarah-davis",
+    body: "From start to finish, the experience was seamless. The quality of work is exceptional and worth every penny.",
+    name: "Sarah Davis",
+    location: "Homeowner, Brickell",
+    project: "Kitchen Remodel",
+    rating: 5,
+    date: "2024-03-20",
+  },
+  {
+    slug: "david-wilson",
+    body: "They turned our vision into reality. The attention to detail and craftsmanship is unmatched.",
+    name: "David Wilson",
+    location: "Homeowner, Key Biscayne",
+    project: "Outdoor Living Space",
+    rating: 5,
+    date: "2024-04-10",
+  },
+];
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [projects, setProjects] = useState<Project[]>(fallbackProjects);
+  const [testimonials, setTestimonials] = useState<Testimonial[]>(fallbackTestimonials);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const projects = [
-    {
-      id: 1,
-      title: "Stunning Kitchen Remodel",
-      description: "Explore our diverse portfolio showcasing our exceptional home remodeling projects.",
-      tags: ["Contemporary", "Luxury", "Functional"],
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=1600&height=2400",
-    },
-    {
-      id: 3,
-      title: "Kitchen Remodel",
-      description: "Transformed an outdated kitchen into a modern and functional space.",
-      tags: ["Residential", "Modern", "Renovation"],
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac342fa3d3a04b979b877105ab7969f5?format=webp&width=1600&height=2400",
-    },
-    {
-      id: 4,
-      title: "Bathroom Renovation",
-      description: "Created a luxurious and modern bathroom for a commercial space.",
-      tags: ["Commercial", "Luxury", "Remodel"],
-      image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbea764b0b8664f7b803c863ff6ffad7f?format=webp&width=1600&height=2400",
-    },
-  ];
+  useEffect(() => {
+    async function fetchContent() {
+      try {
+        // Fetch projects from CMS
+        const projectsRes = await fetch("/api/content/projects");
+        if (projectsRes.ok) {
+          const cmsProjects = await projectsRes.json();
+          if (cmsProjects.length > 0) {
+            setProjects(cmsProjects);
+          }
+        }
+
+        // Fetch testimonials from CMS
+        const testimonialsRes = await fetch("/api/content/testimonials");
+        if (testimonialsRes.ok) {
+          const cmsTestimonials = await testimonialsRes.json();
+          if (cmsTestimonials.length > 0) {
+            setTestimonials(cmsTestimonials);
+          }
+        }
+      } catch (error) {
+        console.log("Using fallback content:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchContent();
+  }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % projects.length);
@@ -36,39 +145,6 @@ export default function Projects() {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + projects.length) % projects.length);
   };
-
-  const testimonials = [
-    {
-      id: 1,
-      quote: "The team at Giza Renovations completely transformed my outdated kitchen into a modern and functional space. I couldn't be happier with the results.",
-      name: "John Doe",
-      location: "Homeowner, Coconut Grove",
-    },
-    {
-      id: 2,
-      quote: "Outstanding work! They delivered exactly what we envisioned and exceeded our expectations in every way.",
-      name: "Jane Smith",
-      location: "Homeowner, Coral Gables",
-    },
-    {
-      id: 3,
-      quote: "Professional, reliable, and incredibly talented. Our bathroom renovation was completed on time and looks amazing.",
-      name: "Michael Johnson",
-      location: "Homeowner, Miami Beach",
-    },
-    {
-      id: 4,
-      quote: "From start to finish, the experience was seamless. The quality of work is exceptional and worth every penny.",
-      name: "Sarah Davis",
-      location: "Homeowner, Brickell",
-    },
-    {
-      id: 5,
-      quote: "They turned our vision into reality. The attention to detail and craftsmanship is unmatched.",
-      name: "David Wilson",
-      location: "Homeowner, Key Biscayne",
-    },
-  ];
 
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -85,7 +161,7 @@ export default function Projects() {
         {/* Carousel Images */}
         {projects.map((project, index) => (
           <div
-            key={project.id}
+            key={project.slug}
             className={`absolute inset-0 transition-opacity duration-700 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
@@ -112,7 +188,7 @@ export default function Projects() {
                 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-3 mb-8">
-                  {project.tags.map((tag) => (
+                  {project.tags?.map((tag) => (
                     <span
                       key={tag}
                       className="px-4 py-2 bg-white text-gray-900 rounded text-sm font-semibold"
@@ -124,7 +200,7 @@ export default function Projects() {
 
                 {/* View Project Button */}
                 <Link
-                  to={`/projects/${project.id}`}
+                  to={`/projects/${project.slug}`}
                   className="inline-block px-8 py-3 bg-white text-gray-900 rounded text-base font-semibold hover:bg-gray-100 transition-colors shadow-lg"
                 >
                   View Project Details
@@ -188,8 +264,8 @@ export default function Projects() {
 
           {/* Projects Grid */}
           <div className="space-y-16">
-            {projects.slice(1).map((project) => (
-              <div key={project.id} className="space-y-6">
+            {projects.map((project) => (
+              <div key={project.slug} className="space-y-6">
                 {/* Project Image - Full Width */}
                 <div className="overflow-hidden rounded-lg">
                   <img
@@ -207,7 +283,7 @@ export default function Projects() {
                       {project.title}
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
+                      {project.tags?.map((tag) => (
                         <span
                           key={tag}
                           className="px-3 py-1 border border-gray-900 text-gray-900 rounded text-sm font-medium"
@@ -239,18 +315,18 @@ export default function Projects() {
             <div className="text-center px-12 md:px-20">
               {testimonials.map((testimonial, index) => (
                 <div
-                  key={testimonial.id}
+                  key={testimonial.slug}
                   className={`transition-opacity duration-500 ${
                     index === currentTestimonial ? "opacity-100" : "opacity-0 absolute inset-0"
                   }`}
                 >
                   <p className="text-xl md:text-2xl lg:text-3xl font-normal text-gray-900 leading-relaxed mb-8 max-w-4xl mx-auto">
-                    {testimonial.quote.includes("Giza Renovations") ? (
+                    {testimonial.body.includes("Giza Renovations") ? (
                       <>
-                        The team at <span className="font-bold">Giza Renovations</span> {testimonial.quote.split("Giza Renovations")[1]}
+                        The team at <span className="font-bold">Giza Renovations</span> {testimonial.body.split("Giza Renovations")[1]}
                       </>
                     ) : (
-                      testimonial.quote
+                      testimonial.body
                     )}
                   </p>
                   <div className="text-center">

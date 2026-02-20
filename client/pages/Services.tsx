@@ -1,47 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTestimonials } from "../hooks/useContent";
 
 export default function Services() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
-  const testimonials = [
-    {
-      id: 1,
-      quote: "Our experience with Giza Renovations was exceptional. They exceeded our expectations.",
-      name: "John Doe",
-      location: "Homeowner, ABC Company",
-    },
-    {
-      id: 2,
-      quote: "The team at Giza Renovations transformed our kitchen beyond our wildest dreams. Their attention to detail and professionalism was outstanding from start to finish.",
-      name: "Sarah Johnson",
-      location: "Satisfied Customer",
-    },
-    {
-      id: 3,
-      quote: "We couldn't be happier with our new bathroom renovation. The quality of work and materials used exceeded all our expectations. Highly recommended!",
-      name: "Michael Chen",
-      location: "Home Renovation Client",
-    },
-    {
-      id: 4,
-      quote: "Giza Renovations transformed our outdated kitchen into a modern and functional space. We couldn't be happier with the results.",
-      name: "Jane Smith",
-      location: "Business Owner, XYZ Corporation",
-    },
-    {
-      id: 5,
-      quote: "From consultation to completion, Giza Renovations delivered exceptional service. Our home extension was completed on time and within budget.",
-      name: "Robert Martinez",
-      location: "Project Manager",
-    },
-    {
-      id: 6,
-      quote: "Outstanding craftsmanship and customer service! Giza Renovations made our dream home a reality. Every detail was handled with care and precision.",
-      name: "Emily Davis",
-      location: "Homeowner",
-    },
-  ];
+  const { testimonials } = useTestimonials();
 
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -536,13 +499,13 @@ export default function Services() {
             <div className="text-center px-12 md:px-20">
               {testimonials.map((testimonial, index) => (
                 <div
-                  key={testimonial.id}
+                  key={testimonial.slug}
                   className={`transition-opacity duration-500 ${
                     index === currentTestimonial ? "opacity-100" : "opacity-0 absolute inset-0"
                   }`}
                 >
                   <p className="text-xl md:text-2xl lg:text-3xl font-normal text-gray-900 leading-relaxed mb-8 max-w-4xl mx-auto">
-                    "{testimonial.quote}"
+                    "{testimonial.body}"
                   </p>
                   <div className="text-center">
                     <p className="text-base md:text-lg font-semibold text-gray-900 mb-1">

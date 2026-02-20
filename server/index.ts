@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
+import { getProjects, getTestimonials, getServices, getSettings } from "./routes/content";
 
 export function createServer() {
   const app = express();
@@ -18,6 +19,12 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+
+  // Content API routes (reads from CMS content files)
+  app.get("/api/content/projects", getProjects);
+  app.get("/api/content/testimonials", getTestimonials);
+  app.get("/api/content/services", getServices);
+  app.get("/api/content/settings", getSettings);
 
   return app;
 }

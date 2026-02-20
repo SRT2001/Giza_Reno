@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -44,6 +45,7 @@ function App() {
             <Route path="/testimonials" element={<PlaceholderPage title="Testimonials" />} />
             <Route path="/terms" element={<PlaceholderPage title="Terms of Service" />} />
             <Route path="/privacy" element={<PlaceholderPage title="Privacy Policy" />} />
+            <Route path="/admin" element={<Admin title="Admin CMS" />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

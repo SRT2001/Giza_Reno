@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTestimonials } from "../hooks/useContent";
 
 export default function Index() {
+  const { testimonials } = useTestimonials();
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Background Image */}
@@ -331,71 +333,17 @@ export default function Index() {
 
           {/* Testimonials Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {/* Testimonial Card 1 */}
-            <div className="border border-gray-300 rounded-lg p-6 bg-white">
-              <p className="text-gray-900 mb-6 leading-relaxed">
-                "We hired Giza Renovations to completely remodel our 1970s kitchen, and the results are absolutely stunning. They handled everything from the initial design consultation to the final walkthrough with incredible professionalism. The project finished two days ahead of schedule!"
-              </p>
-              <div>
-                <p className="font-bold text-gray-900">David & Amanda Richardson</p>
-                <p className="text-sm text-gray-600">Kitchen Remodel - Coral Gables, FL</p>
+            {testimonials.slice(0, 6).map((testimonial) => (
+              <div key={testimonial.slug} className="border border-gray-300 rounded-lg p-6 bg-white">
+                <p className="text-gray-900 mb-6 leading-relaxed">
+                  "{testimonial.body}"
+                </p>
+                <div>
+                  <p className="font-bold text-gray-900">{testimonial.name}</p>
+                  <p className="text-sm text-gray-600">{testimonial.location}</p>
+                </div>
               </div>
-            </div>
-
-            {/* Testimonial Card 2 */}
-            <div className="border border-gray-300 rounded-lg p-6 bg-white">
-              <p className="text-gray-900 mb-6 leading-relaxed">
-                "The team at Giza Renovations transformed our master bathroom into a spa-like retreat. Their attention to detail, from the tile work to the custom vanity installation, was impeccable. Communication throughout the project was excellent, and they respected our home and schedule."
-              </p>
-              <div>
-                <p className="font-bold text-gray-900">Sarah Mendoza</p>
-                <p className="text-sm text-gray-600">Bathroom Renovation - Miami Beach, FL</p>
-              </div>
-            </div>
-
-            {/* Testimonial Card 3 */}
-            <div className="border border-gray-300 rounded-lg p-6 bg-white">
-              <p className="text-gray-900 mb-6 leading-relaxed">
-                "After getting quotes from five different contractors, we chose Giza Renovations for our basement finishing project. Best decision we made! They provided creative solutions to maximize the space and stayed within our budget. The quality of their work is outstanding."
-              </p>
-              <div>
-                <p className="font-bold text-gray-900">Michael Chen</p>
-                <p className="text-sm text-gray-600">Basement Remodel - Kendall, FL</p>
-              </div>
-            </div>
-
-            {/* Testimonial Card 4 */}
-            <div className="border border-gray-300 rounded-lg p-6 bg-white">
-              <p className="text-gray-900 mb-6 leading-relaxed">
-                "Our 1950s home needed major updates, and Giza Renovations delivered beyond our expectations. They carefully preserved the home's character while modernizing every space. The craftsmanship is evident in every corner, and their team was a pleasure to work with."
-              </p>
-              <div>
-                <p className="font-bold text-gray-900">Jennifer & Tom Sullivan</p>
-                <p className="text-sm text-gray-600">Whole Home Renovation - Pinecrest, FL</p>
-              </div>
-            </div>
-
-            {/* Testimonial Card 5 */}
-            <div className="border border-gray-300 rounded-lg p-6 bg-white">
-              <p className="text-gray-900 mb-6 leading-relaxed">
-                "From start to finish, Giza Renovations was professional, punctual, and incredibly skilled. Our home extension blends seamlessly with the existing structure, and the added 400 square feet has completely transformed how we use our space. Worth every penny!"
-              </p>
-              <div>
-                <p className="font-bold text-gray-900">Roberto & Maria Garcia</p>
-                <p className="text-sm text-gray-600">Home Extension - Coconut Grove, FL</p>
-              </div>
-            </div>
-
-            {/* Testimonial Card 6 */}
-            <div className="border border-gray-300 rounded-lg p-6 bg-white">
-              <p className="text-gray-900 mb-6 leading-relaxed">
-                "Outstanding service from consultation to completion! Giza Renovations helped us navigate the permit process, provided 3D renderings of the design, and completed our guest suite renovation in just six weeks. Their attention to detail and commitment to quality is unmatched."
-              </p>
-              <div>
-                <p className="font-bold text-gray-900">Lisa Thompson</p>
-                <p className="text-sm text-gray-600">Guest Suite Addition - Aventura, FL</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

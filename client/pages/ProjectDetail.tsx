@@ -168,6 +168,69 @@ const projectsData: ProjectData = {
     ctaText: "Upgrade Your Commercial Space",
     ctaButtonText: "Get a Free Quote"
   },
+  "modern-bathroom-renovation": {
+    title: "Modern Bathroom Renovation",
+    subtitle: "Full Bathroom Transformation | Contemporary Design",
+    heroImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F828994fee174439781f86accc6b0bfee?format=webp&width=1600&height=900",
+    location: "Miami, Florida",
+    date: "3 Months (Completed 2024)",
+    client: "Private Homeowner",
+    scope: "Full Bathroom Gut Renovation",
+    overview: "This modern bathroom renovation transformed an outdated, unfinished space into a sleek, spa-inspired retreat. What was once a raw construction shell with exposed block walls and framing is now a high-end bathroom defined by clean lines, matte finishes, and intentional lighting.",
+    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F7ccfc7decb7c4179a99e31e0edea82b3?format=webp&width=800&height=1200",
+    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbf1e8f827a134721beb02a6c8af42357?format=webp&width=800&height=1200",
+    beforeTitle: "Before",
+    afterTitle: "After",
+    transformationDescription: "Drag the slider to see the dramatic difference in space flow and material selection.",
+    sections: [
+      {
+        title: "The Before",
+        content: "The original space was completely unfinished with exposed concrete block walls, visible framing and ceiling joists, no plumbing fixtures installed, no flooring or waterproofing, limited natural light, and inefficient layout planning. The room lacked insulation, moisture protection, and proper electrical routing. It required a full-scale renovation from the ground up."
+      },
+      {
+        title: "The Vision",
+        content: "The homeowners wanted a modern, minimalist aesthetic with dark, moody finishes and contrast, a freestanding soaking tub, a walk-in glass shower, custom floating vanity, improved natural lighting, and a bathroom that felt like a luxury hotel suite. The design direction focused on creating a spa-like environment while maintaining durability for long-term use in Miami's humid climate."
+      },
+      {
+        title: "The Renovation Process",
+        content: "Our comprehensive approach included structural & infrastructure work with full framing correction, plumbing rough-in, electrical installation, moisture barriers and waterproofing, insulation upgrade, layout optimization to allow a centered freestanding tub, glass-enclosed shower, and wall-mounted vanity, plus high-end finishes including large-format matte porcelain tiles, dark wall paneling, frameless glass shower, ceiling-mounted rainfall shower, custom floating vanity, minimalist matte black fixtures, and contemporary circular mirror with integrated lighting."
+      }
+    ],
+    features: [
+      "Full bathroom gut renovation",
+      "Modern spa-inspired design",
+      "Custom floating vanity",
+      "Freestanding soaking tub",
+      "Frameless glass shower",
+      "High-end matte finishes",
+      "Structural + plumbing overhaul",
+      "LED task and ambient lighting"
+    ],
+    highlightItems: [
+      {
+        label: "Improved Flow",
+        value: "+35%",
+        description: "Increased usable space with better layout"
+      },
+      {
+        label: "Market Position",
+        value: "Luxury",
+        description: "Upgraded to high-end contemporary style"
+      },
+      {
+        label: "Quality Rating",
+        value: "Premium",
+        description: "Custom materials throughout"
+      },
+      {
+        label: "Design Time",
+        value: "2 Weeks",
+        description: "Collaborative design process"
+      }
+    ],
+    ctaText: "Ready to Transform Your Bathroom?",
+    ctaButtonText: "Schedule a Consultation"
+  },
   "coconut-grove-modern-bathroom": {
     title: "Coconut Grove Modern Bathroom Renovation",
     subtitle: "Full Bathroom Transformation | Coconut Grove, Miami, FL",

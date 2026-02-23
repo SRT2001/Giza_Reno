@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
@@ -39,7 +40,7 @@ function App() {
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:id" element={<PlaceholderPage title="Project Details" />} />
+            <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/testimonials" element={<PlaceholderPage title="Testimonials" />} />

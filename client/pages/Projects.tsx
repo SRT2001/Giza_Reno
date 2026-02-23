@@ -51,6 +51,15 @@ const fallbackProjects: Project[] = [
     category: "Commercial",
     date: "2024-03-05",
   },
+  {
+    slug: "coconut-grove-modern-bathroom",
+    title: "Coconut Grove Modern Bathroom Renovation",
+    description: "Full bathroom transformation from raw construction shell to modern spa-inspired retreat with custom finishes and high-end materials.",
+    tags: ["Modern", "Luxury", "Bathroom", "Residential"],
+    image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F828994fee174439781f86accc6b0bfee?format=webp&width=1600&height=2400",
+    category: "Residential",
+    date: "2024-04-15",
+  },
 ];
 
 const fallbackTestimonials: Testimonial[] = [

@@ -349,55 +349,78 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      {/* Breadcrumb & Project Meta */}
-      <section className="bg-white px-6 md:px-12 lg:px-20 py-12 md:py-16 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-4 gap-8 md:gap-12">
-            {/* Project Details */}
+      {/* Project Meta Section with Sidebar Layout */}
+      <section className="bg-white px-6 md:px-12 lg:px-20 py-12 md:py-16">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-8 md:gap-12">
+          {/* Left Column - Project Details */}
+          <div className="lg:col-span-1 space-y-6">
             <div>
-              <p className="text-xs uppercase tracking-wide text-gray-600 mb-2">Location</p>
-              <p className="text-gray-900 font-light text-lg">{project.location}</p>
+              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Location</p>
+              <p className="text-sm text-gray-900">{project.location}</p>
             </div>
             <div>
-              <p className="text-xs uppercase tracking-wide text-gray-600 mb-2">Timeline</p>
-              <p className="text-gray-900 font-light text-lg">{project.date}</p>
+              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Timeline</p>
+              <p className="text-sm text-gray-900">{project.date}</p>
             </div>
             <div>
-              <p className="text-xs uppercase tracking-wide text-gray-600 mb-2">Client</p>
-              <p className="text-gray-900 font-light text-lg">{project.client}</p>
+              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Client</p>
+              <p className="text-sm text-gray-900">{project.client}</p>
             </div>
             <div>
-              <p className="text-xs uppercase tracking-wide text-gray-600 mb-2">Scope</p>
-              <p className="text-gray-900 font-light text-lg">{project.scope}</p>
+              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Scope</p>
+              <p className="text-sm text-gray-900">{project.scope}</p>
             </div>
+          </div>
+
+          {/* Right Column - Overview */}
+          <div className="lg:col-span-3">
+            <p className="text-xs uppercase tracking-widest text-gray-600 mb-6 font-semibold">Project Overview</p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              {project.overview}
+            </p>
           </div>
         </div>
       </section>
 
       {/* Design Concept */}
-      <section className="bg-white px-6 md:px-12 lg:px-20 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">Design Concept</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            {project.overview}
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Our goal was to create a functional, minimalist design that feels open, calm, and luxurious while maximizing every inch of the space.
-          </p>
+      <section className="bg-white px-6 md:px-12 lg:px-20 py-16 md:py-24 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-8 md:gap-12">
+          {/* Left Sidebar - Empty for alignment */}
+          <div className="lg:col-span-1"></div>
+
+          {/* Right Content */}
+          <div className="lg:col-span-3">
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">Design Concept</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              {project.sections[0]?.content || "The primary objective for this project was to design a contemporary space that reflects current design trends while maintaining timeless appeal."}
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Our goal was to create a functional, minimalist design that feels open, calm, and luxurious while maximizing every inch of the space.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* The Transformation - Before/After Slider */}
       <section className="bg-white px-6 md:px-12 lg:px-20 py-16 md:py-24">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">The Transformation</h2>
-          <p className="text-gray-600 text-lg mb-12">
-            {project.transformationDescription}
-          </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+            {/* Left Sidebar - Title */}
+            <div className="lg:col-span-1">
+              <h2 className="text-4xl md:text-5xl font-light text-gray-900">The Transformation</h2>
+            </div>
+
+            {/* Right Content - Description */}
+            <div className="lg:col-span-3">
+              <p className="text-gray-600 text-lg">
+                {project.transformationDescription}
+              </p>
+            </div>
+          </div>
 
           {/* Before/After Slider */}
           <div
-            className="relative w-full aspect-[4/3] overflow-hidden rounded-lg cursor-col-resize group"
+            className="relative w-full aspect-video overflow-hidden rounded-lg cursor-col-resize group shadow-lg"
             onMouseMove={handleMouseMove}
             onMouseLeave={() => {}}
           >
@@ -450,55 +473,62 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      {/* Project Sections */}
-      {project.sections.map((section, index) => (
+      {/* Project Process Sections */}
+      {project.sections.slice(1).map((section, index) => (
         <section
           key={index}
           className={`px-6 md:px-12 lg:px-20 py-16 md:py-24 ${
             index % 2 === 0 ? "bg-white" : "bg-gray-50"
           }`}
         >
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">
-              {section.title}
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {section.content}
-            </p>
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-8 md:gap-12">
+            {/* Left Sidebar - Title */}
+            <div className="lg:col-span-1">
+              <h2 className="text-3xl md:text-4xl font-light text-gray-900">
+                {section.title}
+              </h2>
+            </div>
+
+            {/* Right Content */}
+            <div className="lg:col-span-3">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {section.content}
+              </p>
+            </div>
           </div>
         </section>
       ))}
 
       {/* Elevated Living Section */}
       <section className="bg-white px-6 md:px-12 lg:px-20 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-start">
             {/* Left Column - Image */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-start justify-center">
               <img
                 src={project.afterImage}
-                alt="Bathroom detail"
-                className="w-full rounded-lg"
+                alt="Project detail"
+                className="w-full rounded-lg shadow-lg"
               />
             </div>
 
             {/* Right Column - Features */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">
+              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-12">
                 Elevated Living,<br />Quantifiable Value
               </h2>
-              
-              <div className="space-y-6 mb-12">
+
+              <div className="space-y-8 mb-12">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Improved Flow</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Improved Flow</h3>
+                  <p className="text-gray-700 leading-relaxed text-base">
                     Redesigning the spatial flow and introducing thoughtful layouts created an open, flowing design that feels spacious and functional.
                   </p>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Market Position</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Market Position</h3>
+                  <p className="text-gray-700 leading-relaxed text-base">
                     Upgrading to high-end finishes and contemporary design elevated the property's market value and appeal to discerning homeowners.
                   </p>
                 </div>
@@ -506,11 +536,11 @@ export default function ProjectDetail() {
 
               {/* Key Upgrades */}
               <div className="border-t pt-8">
-                <h3 className="text-sm uppercase tracking-wide text-gray-600 mb-6">Key Upgrades</h3>
+                <p className="text-xs uppercase tracking-widest text-gray-600 mb-6 font-semibold">Key Upgrades</p>
                 <ul className="space-y-3">
                   {project.features.slice(0, 4).map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-700">
-                      <svg className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <li key={idx} className="flex items-start gap-3 text-gray-700 text-base">
+                      <svg className="w-5 h-5 text-gray-900 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                       {feature}

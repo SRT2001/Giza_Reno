@@ -61,7 +61,7 @@ const fallbackProjects: Project[] = [
     date: "2024-04-15",
   },
   {
-    slug: "modern-office-development",
+    slug: "office-development",
     title: "Modern Office Development & Interior Build-Out",
     description: "Commercial office transformation featuring glass partitions, collaborative workspaces, and modern industrial finishes. Complete build-out from vacant shell.",
     tags: ["Commercial", "Modern", "Office", "Build-Out"],

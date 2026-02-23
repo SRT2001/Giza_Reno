@@ -65,7 +65,7 @@ const fallbackProjects: Project[] = [
     title: "Modern Office Development & Interior Build-Out",
     description: "Commercial office transformation featuring glass partitions, collaborative workspaces, and modern industrial finishes. Complete build-out from vacant shell.",
     tags: ["Commercial", "Modern", "Office", "Build-Out"],
-    image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbea764b0b8664f7b803c863ff6ffad7f?format=webp&width=1600&height=2400",
+    image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F848e39b319e349aaacc5c442ebba91ee?format=webp&width=1600&height=2400",
     category: "Commercial",
     date: "2024-05-01",
   },

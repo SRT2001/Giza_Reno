@@ -19,13 +19,11 @@ interface ProjectData {
     sections: {
       title: string;
       content: string;
-      icon?: string;
     }[];
     features: string[];
-    highlightItems: {
-      label: string;
-      value: string;
-      description?: string;
+    highlightSections: {
+      title: string;
+      description: string;
     }[];
     ctaText: string;
     ctaButtonText: string;
@@ -46,19 +44,11 @@ const projectsData: ProjectData = {
     afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=800&height=1200",
     beforeTitle: "Before",
     afterTitle: "After",
-    transformationDescription: "See how we transformed this kitchen from dated to contemporary.",
+    transformationDescription: "Drag the slider to see how we transformed this kitchen from dated to contemporary.",
     sections: [
       {
-        title: "The Vision",
-        content: "The homeowners wanted a modern, open-concept kitchen that would serve as the heart of their home. We designed a space that maximizes natural light, improves workflow, and incorporates high-end appliances and finishes."
-      },
-      {
-        title: "The Design",
-        content: "We implemented a contemporary aesthetic with clean lines, neutral color palettes, and premium materials. Custom cabinetry, quartz countertops, and state-of-the-art appliances create a sophisticated and functional space."
-      },
-      {
-        title: "The Result",
-        content: "The completed kitchen is a stunning showcase of modern design principles and expert craftsmanship. Every element works together to create an efficient, beautiful space that the family enjoys daily."
+        title: "Design Concept",
+        content: "The primary objective for this kitchen remodel was to design a contemporary space that reflects current design trends while maintaining timeless appeal. The homeowners wanted a modern, open-concept kitchen that would serve as the heart of their home. We designed a space that maximizes natural light, improves workflow, and incorporates high-end appliances and finishes."
       }
     ],
     features: [
@@ -69,11 +59,15 @@ const projectsData: ProjectData = {
       "Improved lighting",
       "Modern aesthetic"
     ],
-    highlightItems: [
-      { label: "Layout", value: "Open", description: "Improved kitchen flow" },
-      { label: "Style", value: "Contemporary", description: "Clean modern lines" },
-      { label: "Materials", value: "Premium", description: "High-end finishes" },
-      { label: "Timeline", value: "4 Months", description: "On-time completion" }
+    highlightSections: [
+      {
+        title: "Improved Flow",
+        description: "Redesigning the spatial flow and introducing thoughtful layouts created an open, flowing design that feels spacious and functional."
+      },
+      {
+        title: "Market Position",
+        description: "Upgrading to high-end finishes and contemporary design elevated the property's market value and appeal to discerning homeowners."
+      }
     ],
     ctaText: "Ready to Remodel Your Kitchen?",
     ctaButtonText: "Schedule a Consultation"
@@ -94,16 +88,8 @@ const projectsData: ProjectData = {
     transformationDescription: "View the transformation of this kitchen space.",
     sections: [
       {
-        title: "The Challenge",
-        content: "The existing kitchen was dated with poor workflow and limited storage. We needed to modernize the space while respecting the home's architecture."
-      },
-      {
-        title: "Our Solution",
-        content: "We implemented a modern design with improved layouts, contemporary finishes, and smart storage solutions. The result is a kitchen that feels both timeless and current."
-      },
-      {
-        title: "The Outcome",
-        content: "The homeowners now have a beautiful, functional kitchen that adds value to their home and enhances their daily living experience."
+        title: "Design Concept",
+        content: "The existing kitchen was dated with poor workflow and limited storage. We implemented a modern design with improved layouts, contemporary finishes, and smart storage solutions. The result is a kitchen that feels both timeless and current."
       }
     ],
     features: [
@@ -114,11 +100,15 @@ const projectsData: ProjectData = {
       "Better lighting",
       "Contemporary style"
     ],
-    highlightItems: [
-      { label: "Style", value: "Modern", description: "Updated aesthetic" },
-      { label: "Storage", value: "+50%", description: "Increased capacity" },
-      { label: "Workflow", value: "Optimized", description: "Better kitchen flow" },
-      { label: "Completion", value: "On Time", description: "3 month project" }
+    highlightSections: [
+      {
+        title: "Improved Flow",
+        description: "Optimized kitchen layout for better workflow and accessibility."
+      },
+      {
+        title: "Storage Solutions",
+        description: "Increased storage capacity with smart organizational design."
+      }
     ],
     ctaText: "Transform Your Kitchen Today",
     ctaButtonText: "Get Started"
@@ -139,16 +129,8 @@ const projectsData: ProjectData = {
     transformationDescription: "Experience the luxury of this commercial bathroom transformation.",
     sections: [
       {
-        title: "Premium Design",
-        content: "We created a luxurious bathroom space that reflects high-end design principles. Premium fixtures, quality materials, and thoughtful layouts combine to create an elegant facility."
-      },
-      {
-        title: "Functionality",
-        content: "Beyond aesthetics, we ensured the space is highly functional for commercial use with durable materials and smart design choices."
-      },
-      {
-        title: "Impact",
-        content: "This renovated bathroom elevates the overall perception of the commercial space, creating a positive impression on clients and employees."
+        title: "Design Concept",
+        content: "We created a luxurious bathroom space that reflects high-end design principles. Premium fixtures, quality materials, and thoughtful layouts combine to create an elegant facility that elevates the overall perception of the commercial space."
       }
     ],
     features: [
@@ -159,11 +141,15 @@ const projectsData: ProjectData = {
       "Efficient layout",
       "High-end materials"
     ],
-    highlightItems: [
-      { label: "Grade", value: "Luxury", description: "Premium finishes" },
-      { label: "Durability", value: "Commercial", description: "Built to last" },
-      { label: "Design", value: "Modern", description: "Contemporary style" },
-      { label: "Completion", value: "2 Months", description: "Quick turnaround" }
+    highlightSections: [
+      {
+        title: "Premium Quality",
+        description: "Using only the highest quality materials and finishes for a luxury experience."
+      },
+      {
+        title: "Functional Design",
+        description: "Designed for commercial use with durability and style."
+      }
     ],
     ctaText: "Upgrade Your Commercial Space",
     ctaButtonText: "Get a Free Quote"
@@ -181,19 +167,11 @@ const projectsData: ProjectData = {
     afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbf1e8f827a134721beb02a6c8af42357?format=webp&width=800&height=1200",
     beforeTitle: "Before",
     afterTitle: "After",
-    transformationDescription: "Drag the slider to see the dramatic difference in space flow and material selection.",
+    transformationDescription: "Drag the slider to see the dramatic difference in spatial flow and material selection.",
     sections: [
       {
-        title: "The Before",
-        content: "The original space was completely unfinished with exposed concrete block walls, visible framing and ceiling joists, no plumbing fixtures installed, no flooring or waterproofing, limited natural light, and inefficient layout planning. The room lacked insulation, moisture protection, and proper electrical routing. It required a full-scale renovation from the ground up."
-      },
-      {
-        title: "The Vision",
+        title: "Design Concept",
         content: "The homeowners wanted a modern, minimalist aesthetic with dark, moody finishes and contrast, a freestanding soaking tub, a walk-in glass shower, custom floating vanity, improved natural lighting, and a bathroom that felt like a luxury hotel suite. The design direction focused on creating a spa-like environment while maintaining durability for long-term use in Miami's humid climate."
-      },
-      {
-        title: "The Renovation Process",
-        content: "Our comprehensive approach included structural & infrastructure work with full framing correction, plumbing rough-in, electrical installation, moisture barriers and waterproofing, insulation upgrade, layout optimization to allow a centered freestanding tub, glass-enclosed shower, and wall-mounted vanity, plus high-end finishes including large-format matte porcelain tiles, dark wall paneling, frameless glass shower, ceiling-mounted rainfall shower, custom floating vanity, minimalist matte black fixtures, and contemporary circular mirror with integrated lighting."
       }
     ],
     features: [
@@ -202,30 +180,16 @@ const projectsData: ProjectData = {
       "Custom floating vanity",
       "Freestanding soaking tub",
       "Frameless glass shower",
-      "High-end matte finishes",
-      "Structural + plumbing overhaul",
-      "LED task and ambient lighting"
+      "High-end matte finishes"
     ],
-    highlightItems: [
+    highlightSections: [
       {
-        label: "Improved Flow",
-        value: "+35%",
-        description: "Increased usable space with better layout"
+        title: "Improved Flow",
+        description: "Redesigning the spatial flow created an open, flowing design that maximizes every inch of space."
       },
       {
-        label: "Market Position",
-        value: "Luxury",
-        description: "Upgraded to high-end contemporary style"
-      },
-      {
-        label: "Quality Rating",
-        value: "Premium",
-        description: "Custom materials throughout"
-      },
-      {
-        label: "Design Time",
-        value: "2 Weeks",
-        description: "Collaborative design process"
+        title: "Luxury Materials",
+        description: "Upgraded to high-end finishes and contemporary design for a spa-like experience."
       }
     ],
     ctaText: "Ready to Transform Your Bathroom?",
@@ -247,16 +211,8 @@ const projectsData: ProjectData = {
     transformationDescription: "Drag the slider to see the dramatic difference in space flow and material selection.",
     sections: [
       {
-        title: "The Before",
-        content: "The original space was completely unfinished with exposed concrete block walls, visible framing and ceiling joists, no plumbing fixtures installed, no flooring or waterproofing, limited natural light, and inefficient layout planning. The room lacked insulation, moisture protection, and proper electrical routing. It required a full-scale renovation from the ground up."
-      },
-      {
-        title: "The Vision",
-        content: "The homeowners wanted a modern, minimalist aesthetic with dark, moody finishes and contrast, a freestanding soaking tub, a walk-in glass shower, custom floating vanity, improved natural lighting, and a bathroom that felt like a luxury hotel suite. The design direction focused on creating a spa-like environment while maintaining durability for long-term use in Miami's humid climate."
-      },
-      {
-        title: "The Renovation Process",
-        content: "Our comprehensive approach included structural & infrastructure work with full framing correction, plumbing rough-in, electrical installation, moisture barriers and waterproofing, insulation upgrade, layout optimization to allow a centered freestanding tub, glass-enclosed shower, and wall-mounted vanity, plus high-end finishes including large-format matte porcelain tiles, dark wall paneling, frameless glass shower, ceiling-mounted rainfall shower, custom floating vanity, minimalist matte black fixtures, and contemporary circular mirror with integrated lighting."
+        title: "Design Concept",
+        content: "Our goal was to create a functional, minimalist design that feels open, calm, and luxurious while maximizing every inch of the space. The homeowners wanted dark, moody finishes with a freestanding soaking tub, walk-in glass shower, custom floating vanity, and a bathroom that felt like a luxury hotel suite."
       }
     ],
     features: [
@@ -265,30 +221,16 @@ const projectsData: ProjectData = {
       "Custom floating vanity",
       "Freestanding soaking tub",
       "Frameless glass shower",
-      "High-end matte finishes",
-      "Structural + plumbing overhaul",
-      "LED task and ambient lighting"
+      "High-end matte finishes"
     ],
-    highlightItems: [
+    highlightSections: [
       {
-        label: "Improved Flow",
-        value: "+35%",
-        description: "Increased usable space with better layout"
+        title: "Improved Flow",
+        description: "Redesigning the spatial flow created an open, flowing design that feels spacious and luxurious."
       },
       {
-        label: "Market Position",
-        value: "Luxury",
-        description: "Upgraded to high-end contemporary style"
-      },
-      {
-        label: "Quality Rating",
-        value: "Premium",
-        description: "Custom materials throughout"
-      },
-      {
-        label: "Design Time",
-        value: "2 Weeks",
-        description: "Collaborative design process"
+        title: "Market Position",
+        description: "Upgraded to high-end finishes and contemporary design to elevate property value."
       }
     ],
     ctaText: "Ready to Transform Your Bathroom?",
@@ -324,9 +266,9 @@ export default function ProjectDetail() {
   };
 
   return (
-    <div>
+    <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
+      <section className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -334,89 +276,59 @@ export default function ProjectDetail() {
             backgroundPosition: 'center'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/40 to-black/30" />
         
-        <div className="relative h-full flex flex-col justify-end px-6 md:px-12 lg:px-20 pb-12 md:pb-16 lg:pb-20">
-          <div className="max-w-4xl">
-            <p className="text-gray-400 text-sm uppercase tracking-wide mb-4">Full Home Renovation</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 leading-tight">
+        <div className="relative h-full flex flex-col justify-end px-6 md:px-12 lg:px-20 pb-16 md:pb-20 lg:pb-24">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-4 leading-tight">
               {project.title}
             </h1>
-            <p className="text-lg md:text-xl text-gray-300">
+            <p className="text-lg md:text-xl text-gray-200">
               {project.subtitle}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Project Meta Section with Sidebar Layout */}
-      <section className="bg-white px-6 md:px-12 lg:px-20 py-12 md:py-16">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-8 md:gap-12">
-          {/* Left Column - Project Details */}
-          <div className="lg:col-span-1 space-y-6">
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Location</p>
-              <p className="text-sm text-gray-900">{project.location}</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Timeline</p>
-              <p className="text-sm text-gray-900">{project.date}</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Client</p>
-              <p className="text-sm text-gray-900">{project.client}</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-widest text-gray-600 mb-3 font-semibold">Scope</p>
-              <p className="text-sm text-gray-900">{project.scope}</p>
-            </div>
+      {/* Project Metadata */}
+      <section className="px-6 md:px-12 lg:px-20 py-12 md:py-16 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-2">Location</p>
+            <p className="text-gray-900 text-sm">{project.location}</p>
           </div>
-
-          {/* Right Column - Overview */}
-          <div className="lg:col-span-3">
-            <p className="text-xs uppercase tracking-widest text-gray-600 mb-6 font-semibold">Project Overview</p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {project.overview}
-            </p>
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-2">Timeline</p>
+            <p className="text-gray-900 text-sm">{project.date}</p>
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-2">Client</p>
+            <p className="text-gray-900 text-sm">{project.client}</p>
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-2">Scope</p>
+            <p className="text-gray-900 text-sm">{project.scope}</p>
           </div>
         </div>
       </section>
 
       {/* Design Concept */}
-      <section className="bg-white px-6 md:px-12 lg:px-20 py-16 md:py-24 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-8 md:gap-12">
-          {/* Left Sidebar - Empty for alignment */}
-          <div className="lg:col-span-1"></div>
-
-          {/* Right Content */}
-          <div className="lg:col-span-3">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">Design Concept</h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              {project.sections[0]?.content || "The primary objective for this project was to design a contemporary space that reflects current design trends while maintaining timeless appeal."}
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our goal was to create a functional, minimalist design that feels open, calm, and luxurious while maximizing every inch of the space.
-            </p>
-          </div>
+      <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">Design Concept</h2>
+          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
+            {project.sections[0]?.content || project.overview}
+          </p>
         </div>
       </section>
 
       {/* The Transformation - Before/After Slider */}
-      <section className="bg-white px-6 md:px-12 lg:px-20 py-16 md:py-24">
+      <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-            {/* Left Sidebar - Title */}
-            <div className="lg:col-span-1">
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900">The Transformation</h2>
-            </div>
-
-            {/* Right Content - Description */}
-            <div className="lg:col-span-3">
-              <p className="text-gray-600 text-lg">
-                {project.transformationDescription}
-              </p>
-            </div>
-          </div>
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">The Transformation</h2>
+          <p className="text-gray-600 text-lg mb-12">
+            {project.transformationDescription}
+          </p>
 
           {/* Before/After Slider */}
           <div
@@ -424,13 +336,13 @@ export default function ProjectDetail() {
             onMouseMove={handleMouseMove}
             onMouseLeave={() => {}}
           >
-            {/* After Image - Base Layer */}
+            {/* After Image - Base */}
             <img
               src={project.afterImage}
               alt="After"
               className="absolute inset-0 w-full h-full object-cover"
             />
-
+            
             {/* Before Image - Overlay */}
             <div
               className="absolute inset-0 overflow-hidden"
@@ -446,26 +358,26 @@ export default function ProjectDetail() {
 
             {/* Slider Handle */}
             <div
-              className="absolute top-0 h-full w-1 bg-white cursor-col-resize"
+              className="absolute top-0 h-full w-1 bg-white/80"
               style={{ left: `${transformPosition}%` }}
             >
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg flex items-center justify-center">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg">
                 <svg className="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14M16 5v14M5 8h4M5 16h4M15 8h4M15 16h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                  <path d="M8 5v14M16 5v14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </div>
             </div>
 
             {/* Before Label */}
             <div className="absolute top-6 left-6 z-10">
-              <p className="text-white font-semibold text-sm uppercase tracking-wide bg-black/50 px-4 py-2 rounded backdrop-blur-sm">
+              <p className="text-white font-semibold text-sm uppercase tracking-wider bg-black/50 px-4 py-2 rounded">
                 {project.beforeTitle}
               </p>
             </div>
 
             {/* After Label */}
             <div className="absolute top-6 right-6 z-10">
-              <p className="text-white font-semibold text-sm uppercase tracking-wide bg-black/50 px-4 py-2 rounded backdrop-blur-sm">
+              <p className="text-white font-semibold text-sm uppercase tracking-wider bg-black/50 px-4 py-2 rounded">
                 {project.afterTitle}
               </p>
             </div>
@@ -473,73 +385,45 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      {/* Project Process Sections */}
-      {project.sections.slice(1).map((section, index) => (
-        <section
-          key={index}
-          className={`px-6 md:px-12 lg:px-20 py-16 md:py-24 ${
-            index % 2 === 0 ? "bg-white" : "bg-gray-50"
-          }`}
-        >
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-8 md:gap-12">
-            {/* Left Sidebar - Title */}
-            <div className="lg:col-span-1">
-              <h2 className="text-3xl md:text-4xl font-light text-gray-900">
-                {section.title}
-              </h2>
-            </div>
-
-            {/* Right Content */}
-            <div className="lg:col-span-3">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {section.content}
-              </p>
-            </div>
-          </div>
-        </section>
-      ))}
-
       {/* Elevated Living Section */}
-      <section className="bg-white px-6 md:px-12 lg:px-20 py-16 md:py-24">
+      <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-start">
-            {/* Left Column - Image */}
-            <div className="flex items-start justify-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left - Image with stat overlay */}
+            <div className="relative">
               <img
                 src={project.afterImage}
                 alt="Project detail"
                 className="w-full rounded-lg shadow-lg"
               />
+              <div className="absolute bottom-6 left-6 bg-white/95 px-6 py-4 rounded backdrop-blur-sm">
+                <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-1">Value Increase</p>
+                <p className="text-3xl font-light text-gray-900">+35%</p>
+                <p className="text-xs text-gray-600 mt-1">Market position</p>
+              </div>
             </div>
 
-            {/* Right Column - Features */}
+            {/* Right - Content */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-12">
+              <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8">
                 Elevated Living,<br />Quantifiable Value
               </h2>
-
+              
               <div className="space-y-8 mb-12">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Improved Flow</h3>
-                  <p className="text-gray-700 leading-relaxed text-base">
-                    Redesigning the spatial flow and introducing thoughtful layouts created an open, flowing design that feels spacious and functional.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Market Position</h3>
-                  <p className="text-gray-700 leading-relaxed text-base">
-                    Upgrading to high-end finishes and contemporary design elevated the property's market value and appeal to discerning homeowners.
-                  </p>
-                </div>
+                {project.highlightSections.map((section, idx) => (
+                  <div key={idx}>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">{section.title}</h3>
+                    <p className="text-gray-700 leading-relaxed">{section.description}</p>
+                  </div>
+                ))}
               </div>
 
               {/* Key Upgrades */}
               <div className="border-t pt-8">
-                <p className="text-xs uppercase tracking-widest text-gray-600 mb-6 font-semibold">Key Upgrades</p>
+                <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-6">Key Upgrades</p>
                 <ul className="space-y-3">
                   {project.features.slice(0, 4).map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-700 text-base">
+                    <li key={idx} className="flex items-start gap-3 text-gray-700">
                       <svg className="w-5 h-5 text-gray-900 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -553,43 +437,24 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      {/* Highlight Stats */}
-      <section className="bg-gray-50 px-6 md:px-12 lg:px-20 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {project.highlightItems.map((item, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-lg border border-gray-200">
-                <p className="text-sm uppercase tracking-wide text-gray-600 mb-2">
-                  {item.label}
-                </p>
-                <p className="text-4xl font-light text-gray-900 mb-3">{item.value}</p>
-                {item.description && (
-                  <p className="text-sm text-gray-600">{item.description}</p>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="bg-gray-900 px-6 md:px-12 lg:px-20 py-16 md:py-24 text-center">
+      <section className="bg-gray-900 px-6 md:px-12 lg:px-20 py-20 md:py-28 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
             {project.ctaText}
           </h2>
-          <p className="text-gray-400 text-lg mb-8">
-            If you're planning a bathroom renovation in Coconut Grove or anywhere in Miami, our team delivers high-quality craftsmanship with modern design expertise.
+          <p className="text-gray-400 text-lg mb-10">
+            Schedule a consultation with our design team to discuss your vision and property potential.
           </p>
-          <button className="bg-white text-gray-900 px-10 py-4 font-semibold hover:bg-gray-100 transition-colors">
+          <button className="bg-white text-gray-900 px-12 py-4 font-semibold hover:bg-gray-100 transition-colors rounded">
             {project.ctaButtonText}
           </button>
         </div>
       </section>
 
       {/* Back to Projects */}
-      <section className="bg-white px-6 md:px-12 lg:px-20 py-12 border-t border-gray-200">
-        <div className="max-w-6xl mx-auto">
+      <section className="px-6 md:px-12 lg:px-20 py-12 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto">
           <Link to="/projects" className="inline-flex items-center gap-2 text-gray-900 hover:text-gray-600 transition-colors">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

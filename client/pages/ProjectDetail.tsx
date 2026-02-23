@@ -33,6 +33,141 @@ interface ProjectData {
 }
 
 const projectsData: ProjectData = {
+  "stunning-kitchen-remodel": {
+    title: "Stunning Kitchen Remodel",
+    subtitle: "Complete Kitchen Transformation | Contemporary Design",
+    heroImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=1600&height=900",
+    location: "Miami, Florida",
+    date: "4 Months (Completed 2024)",
+    client: "Private Homeowner",
+    scope: "Full Kitchen Renovation",
+    overview: "This comprehensive kitchen remodel transformed an outdated space into a modern, functional culinary hub. Combining contemporary design with premium materials, we created a kitchen that seamlessly blends aesthetics with practicality.",
+    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=800&height=1200",
+    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F797ffa29cd574904867b957258bd6aad?format=webp&width=800&height=1200",
+    beforeTitle: "Before",
+    afterTitle: "After",
+    transformationDescription: "See how we transformed this kitchen from dated to contemporary.",
+    sections: [
+      {
+        title: "The Vision",
+        content: "The homeowners wanted a modern, open-concept kitchen that would serve as the heart of their home. We designed a space that maximizes natural light, improves workflow, and incorporates high-end appliances and finishes."
+      },
+      {
+        title: "The Design",
+        content: "We implemented a contemporary aesthetic with clean lines, neutral color palettes, and premium materials. Custom cabinetry, quartz countertops, and state-of-the-art appliances create a sophisticated and functional space."
+      },
+      {
+        title: "The Result",
+        content: "The completed kitchen is a stunning showcase of modern design principles and expert craftsmanship. Every element works together to create an efficient, beautiful space that the family enjoys daily."
+      }
+    ],
+    features: [
+      "Open concept layout",
+      "Custom cabinetry",
+      "Quartz countertops",
+      "Premium appliances",
+      "Improved lighting",
+      "Modern aesthetic"
+    ],
+    highlightItems: [
+      { label: "Layout", value: "Open", description: "Improved kitchen flow" },
+      { label: "Style", value: "Contemporary", description: "Clean modern lines" },
+      { label: "Materials", value: "Premium", description: "High-end finishes" },
+      { label: "Timeline", value: "4 Months", description: "On-time completion" }
+    ],
+    ctaText: "Ready to Remodel Your Kitchen?",
+    ctaButtonText: "Schedule a Consultation"
+  },
+  "kitchen-remodel-2": {
+    title: "Kitchen Remodel",
+    subtitle: "Modern Functionality | Residential Kitchen",
+    heroImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac342fa3d3a04b979b877105ab7969f5?format=webp&width=1600&height=900",
+    location: "Miami, Florida",
+    date: "3 Months (Completed 2024)",
+    client: "Private Homeowner",
+    scope: "Kitchen Renovation",
+    overview: "This kitchen renovation modernized an outdated space with contemporary design elements and improved functionality. We transformed a tired, underutilized kitchen into a vibrant, efficient hub for daily living.",
+    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac342fa3d3a04b979b877105ab7969f5?format=webp&width=800&height=1200",
+    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fac342fa3d3a04b979b877105ab7969f5?format=webp&width=800&height=1200",
+    beforeTitle: "Before",
+    afterTitle: "After",
+    transformationDescription: "View the transformation of this kitchen space.",
+    sections: [
+      {
+        title: "The Challenge",
+        content: "The existing kitchen was dated with poor workflow and limited storage. We needed to modernize the space while respecting the home's architecture."
+      },
+      {
+        title: "Our Solution",
+        content: "We implemented a modern design with improved layouts, contemporary finishes, and smart storage solutions. The result is a kitchen that feels both timeless and current."
+      },
+      {
+        title: "The Outcome",
+        content: "The homeowners now have a beautiful, functional kitchen that adds value to their home and enhances their daily living experience."
+      }
+    ],
+    features: [
+      "Modern design",
+      "Improved workflow",
+      "Enhanced storage",
+      "Quality finishes",
+      "Better lighting",
+      "Contemporary style"
+    ],
+    highlightItems: [
+      { label: "Style", value: "Modern", description: "Updated aesthetic" },
+      { label: "Storage", value: "+50%", description: "Increased capacity" },
+      { label: "Workflow", value: "Optimized", description: "Better kitchen flow" },
+      { label: "Completion", value: "On Time", description: "3 month project" }
+    ],
+    ctaText: "Transform Your Kitchen Today",
+    ctaButtonText: "Get Started"
+  },
+  "bathroom-renovation": {
+    title: "Bathroom Renovation",
+    subtitle: "Luxury Commercial Bathroom | Modern Design",
+    heroImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbea764b0b8664f7b803c863ff6ffad7f?format=webp&width=1600&height=900",
+    location: "Miami, Florida",
+    date: "2 Months (Completed 2024)",
+    client: "Commercial Client",
+    scope: "Bathroom Renovation",
+    overview: "This luxury bathroom renovation created a sophisticated commercial space that combines functionality with high-end design. The space now serves as a premium facility for clients and employees.",
+    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbea764b0b8664f7b803c863ff6ffad7f?format=webp&width=800&height=1200",
+    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbea764b0b8664f7b803c863ff6ffad7f?format=webp&width=800&height=1200",
+    beforeTitle: "Before",
+    afterTitle: "After",
+    transformationDescription: "Experience the luxury of this commercial bathroom transformation.",
+    sections: [
+      {
+        title: "Premium Design",
+        content: "We created a luxurious bathroom space that reflects high-end design principles. Premium fixtures, quality materials, and thoughtful layouts combine to create an elegant facility."
+      },
+      {
+        title: "Functionality",
+        content: "Beyond aesthetics, we ensured the space is highly functional for commercial use with durable materials and smart design choices."
+      },
+      {
+        title: "Impact",
+        content: "This renovated bathroom elevates the overall perception of the commercial space, creating a positive impression on clients and employees."
+      }
+    ],
+    features: [
+      "Luxury finishes",
+      "Premium fixtures",
+      "Commercial-grade durability",
+      "Modern aesthetics",
+      "Efficient layout",
+      "High-end materials"
+    ],
+    highlightItems: [
+      { label: "Grade", value: "Luxury", description: "Premium finishes" },
+      { label: "Durability", value: "Commercial", description: "Built to last" },
+      { label: "Design", value: "Modern", description: "Contemporary style" },
+      { label: "Completion", value: "2 Months", description: "Quick turnaround" }
+    ],
+    ctaText: "Upgrade Your Commercial Space",
+    ctaButtonText: "Get a Free Quote"
+  },
   "coconut-grove-modern-bathroom": {
     title: "Coconut Grove Modern Bathroom Renovation",
     subtitle: "Full Bathroom Transformation | Coconut Grove, Miami, FL",

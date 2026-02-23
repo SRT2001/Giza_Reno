@@ -1,5 +1,11 @@
 import { Link, useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+};
 
 interface ProjectData {
   [key: string]: {
@@ -163,8 +169,8 @@ const projectsData: ProjectData = {
     client: "Private Homeowner",
     scope: "Full Bathroom Gut Renovation",
     overview: "This modern bathroom renovation transformed an outdated, unfinished space into a sleek, spa-inspired retreat. What was once a raw construction shell with exposed block walls and framing is now a high-end bathroom defined by clean lines, matte finishes, and intentional lighting.",
-    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F7ccfc7decb7c4179a99e31e0edea82b3?format=webp&width=800&height=1200",
-    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbf1e8f827a134721beb02a6c8af42357?format=webp&width=800&height=1200",
+    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2bb412a9930c42c091cb8df1940e189a?format=webp&width=800&height=1200",
+    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F3af6a714d28741d7b85737a3282c77c3?format=webp&width=800&height=1200",
     beforeTitle: "Before",
     afterTitle: "After",
     transformationDescription: "Drag the slider to see the dramatic difference in spatial flow and material selection.",
@@ -204,8 +210,8 @@ const projectsData: ProjectData = {
     client: "Private Homeowner",
     scope: "Full Bathroom Gut Renovation",
     overview: "This Coconut Grove bathroom renovation transformed an outdated, unfinished space into a modern, spa-inspired retreat. What was once a raw construction shell with exposed block walls and framing is now a sleek, high-end bathroom defined by clean lines, matte finishes, and intentional lighting.",
-    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F7ccfc7decb7c4179a99e31e0edea82b3?format=webp&width=800&height=1200",
-    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fbf1e8f827a134721beb02a6c8af42357?format=webp&width=800&height=1200",
+    beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2bb412a9930c42c091cb8df1940e189a?format=webp&width=800&height=1200",
+    afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F3af6a714d28741d7b85737a3282c77c3?format=webp&width=800&height=1200",
     beforeTitle: "Before",
     afterTitle: "After",
     transformationDescription: "Drag the slider to see the dramatic difference in space flow and material selection.",
@@ -240,9 +246,26 @@ const projectsData: ProjectData = {
 
 export default function ProjectDetail() {
   const { id } = useParams();
-  const [transformPosition, setTransformPosition] = useState(50);
-  
+  const [sliderPosition, setSliderPosition] = useState(50);
+  const sliderRef = useRef<HTMLDivElement>(null);
+
   const project = projectsData[id as string];
+
+  const handleSliderMove = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
+    if (!sliderRef.current) return;
+
+    const rect = sliderRef.current.getBoundingClientRect();
+    let x: number;
+
+    if ("touches" in e) {
+      x = e.touches[0].clientX - rect.left;
+    } else {
+      x = e.clientX - rect.left;
+    }
+
+    const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
+    setSliderPosition(percentage);
+  };
 
   if (!project) {
     return (
@@ -258,12 +281,6 @@ export default function ProjectDetail() {
     );
   }
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const percentage = (x / rect.width) * 100;
-    setTransformPosition(Math.min(Math.max(percentage, 0), 100));
-  };
 
   return (
     <div className="bg-white">
@@ -322,64 +339,52 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      {/* The Transformation - Before/After Slider */}
-      <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-gray-50">
+      {/* Before & After Slider Section */}
+      <section className="py-24 bg-gray-50 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">The Transformation</h2>
-          <p className="text-gray-600 text-lg mb-12">
-            {project.transformationDescription}
-          </p>
-
-          {/* Before/After Slider */}
-          <div
-            className="relative w-full aspect-video overflow-hidden rounded-lg cursor-col-resize group shadow-lg"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={() => {}}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mb-12 text-center"
           >
-            {/* After Image - Base */}
-            <img
-              src={project.afterImage}
-              alt="After"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            
-            {/* Before Image - Overlay */}
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">The Transformation</h2>
+            <p className="text-gray-600 font-light max-w-2xl mx-auto text-lg">{project.transformationDescription}</p>
+          </motion.div>
+
+          <div
+            className="relative w-full aspect-video md:aspect-[21/9] bg-gray-200 overflow-hidden select-none cursor-ew-resize group rounded-lg"
+            ref={sliderRef}
+            onMouseMove={handleSliderMove}
+            onTouchMove={handleSliderMove}
+          >
+            {/* After Image (Background) */}
+            <div className="absolute inset-0">
+              <img src={project.afterImage} alt="After Renovation" className="w-full h-full object-cover" />
+              <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-4 py-2 text-xs font-semibold tracking-wider uppercase text-gray-900">After</div>
+            </div>
+
+            {/* Before Image (Foreground, clipped) */}
             <div
-              className="absolute inset-0 overflow-hidden"
-              style={{ width: `${transformPosition}%` }}
+              className="absolute inset-0 border-r-2 border-white pointer-events-none"
+              style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
-              <img
-                src={project.beforeImage}
-                alt="Before"
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ width: `${100 / (transformPosition / 100)}%` }}
-              />
+              <img src={project.beforeImage} alt="Before Renovation" className="w-full h-full object-cover opacity-90" />
+              <div className="absolute top-6 left-6 bg-black/80 backdrop-blur-sm px-4 py-2 text-xs font-semibold tracking-wider uppercase text-white">Before</div>
             </div>
 
             {/* Slider Handle */}
             <div
-              className="absolute top-0 h-full w-1 bg-white/80"
-              style={{ left: `${transformPosition}%` }}
+              className="absolute top-0 bottom-0 w-1 bg-white/60 backdrop-blur shadow-[0_0_10px_rgba(0,0,0,0.3)] pointer-events-none"
+              style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
             >
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg">
-                <svg className="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14M16 5v14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center transition-transform group-hover:scale-110">
+                <div className="flex gap-1 md:gap-2 text-gray-900">
+                  <div className="w-0 h-0 border-t-[4px] border-b-[4px] border-r-[6px] border-transparent border-r-gray-900"></div>
+                  <div className="w-0 h-0 border-t-[4px] border-b-[4px] border-l-[6px] border-transparent border-l-gray-900"></div>
+                </div>
               </div>
-            </div>
-
-            {/* Before Label */}
-            <div className="absolute top-6 left-6 z-10">
-              <p className="text-white font-semibold text-sm uppercase tracking-wider bg-black/50 px-4 py-2 rounded">
-                {project.beforeTitle}
-              </p>
-            </div>
-
-            {/* After Label */}
-            <div className="absolute top-6 right-6 z-10">
-              <p className="text-white font-semibold text-sm uppercase tracking-wider bg-black/50 px-4 py-2 rounded">
-                {project.afterTitle}
-              </p>
             </div>
           </div>
         </div>

@@ -30,6 +30,29 @@ function readCollection(collectionName: string) {
   });
 }
 
+// Helper to read a single item by slug
+function readItem(collectionName: string, slug: string) {
+  const collectionPath = path.join(CONTENT_DIR, collectionName);
+  
+  // Try different extensions
+  const extensions = [".md", ".yml", ".yaml"];
+  
+  for (const ext of extensions) {
+    const filePath = path.join(collectionPath, `${slug}${ext}`);
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const { data, content } = matter(fileContent);
+      return {
+        slug,
+        ...data,
+        body: content,
+      };
+    }
+  }
+  
+  return null;
+}
+
 // Get all projects
 export function getProjects(_req: Request, res: Response) {
   try {
@@ -78,5 +101,33 @@ export function getSettings(_req: Request, res: Response) {
   } catch (error) {
     console.error("Error reading settings:", error);
     res.status(500).json({ error: "Failed to read settings" });
+  }
+}
+
+// Get all project details
+export function getProjectDetails(_req: Request, res: Response) {
+  try {
+    const projectDetails = readCollection("project-details");
+    res.json(projectDetails);
+  } catch (error) {
+    console.error("Error reading project details:", error);
+    res.status(500).json({ error: "Failed to read project details" });
+  }
+}
+
+// Get a single project detail by slug
+export function getProjectDetailBySlug(req: Request, res: Response) {
+  try {
+    const { slug } = req.params;
+    const projectDetail = readItem("project-details", slug);
+    
+    if (!projectDetail) {
+      return res.status(404).json({ error: "Project not found" });
+    }
+    
+    res.json(projectDetail);
+  } catch (error) {
+    console.error("Error reading project detail:", error);
+    res.status(500).json({ error: "Failed to read project detail" });
   }
 }

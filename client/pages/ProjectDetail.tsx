@@ -1,3 +1,4 @@
+import { useProjectDetail } from "../hooks/useProjectDetail";
 import { Link, useParams } from "react-router-dom";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
@@ -288,11 +289,14 @@ const projectsData: ProjectData = {
 };
 
 export default function ProjectDetail() {
+  // Try CMS first, fallback to hardcoded data
+  const { project: cmsProject, isLoading } = useProjectDetail(useParams().id);
   const { id } = useParams();
   const [sliderPosition, setSliderPosition] = useState(50);
   const sliderRef = useRef<HTMLDivElement>(null);
 
-  const project = projectsData[id as string];
+  // Use CMS project if available, otherwise fallback to hardcoded
+  const project = cmsProject || projectsData[id as string];
 
   const handleSliderMove = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     if (!sliderRef.current) return;

@@ -1,0 +1,32 @@
+---
+title: "Modern Bathroom Renovation"
+subtitle: "Full Bathroom Transformation | Contemporary Design"
+heroImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F828994fee174439781f86accc6b0bfee?format=webp&width=1600&height=900"
+location: "Miami, Florida"
+date: "3 Months (Completed 2024)"
+client: "Private Homeowner"
+scope: "Full Bathroom Gut Renovation"
+overview: "This modern bathroom renovation transformed an outdated, unfinished space into a sleek, spa-inspired retreat. What was once a raw construction shell with exposed block walls and framing is now a high-end bathroom defined by clean lines, matte finishes, and intentional lighting."
+beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2bb412a9930c42c091cb8df1940e189a?format=webp&width=800&height=1200"
+afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F3af6a714d28741d7b85737a3282c77c3?format=webp&width=800&height=1200"
+beforeTitle: "Before"
+afterTitle: "After"
+transformationDescription: "Drag the slider to see the dramatic difference in spatial flow and material selection."
+sections:
+  - title: "Design Concept"
+    content: "The homeowners wanted a modern, minimalist aesthetic with dark, moody finishes and contrast, a freestanding soaking tub, a walk-in glass shower, custom floating vanity, improved natural lighting, and a bathroom that felt like a luxury hotel suite. The design direction focused on creating a spa-like environment while maintaining durability for long-term use in Miami's humid climate."
+features:
+  - "Full bathroom gut renovation"
+  - "Modern spa-inspired design"
+  - "Custom floating vanity"
+  - "Freestanding soaking tub"
+  - "Frameless glass shower"
+  - "High-end matte finishes"
+highlightSections:
+  - title: "Improved Flow"
+    description: "Redesigning the spatial flow created an open, flowing design that maximizes every inch of space."
+  - title: "Luxury Materials"
+    description: "Upgraded to high-end finishes and contemporary design for a spa-like experience."
+ctaText: "Ready to Transform Your Bathroom?"
+ctaButtonText: "Schedule a Consultation"
+---

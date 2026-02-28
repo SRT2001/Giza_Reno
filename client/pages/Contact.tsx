@@ -41,12 +41,7 @@ export default function Contact() {
               Tell us about your vision and we'll make it real with precision and care
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <button
-                className="px-6 py-3 bg-white text-gray-900 rounded text-base font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Inquire
-              </button>
-              <Link
+                <Link
                 to="/projects"
                 className="px-6 py-3 bg-[#D4AF37] text-gray-900 rounded text-base font-semibold hover:bg-[#C19B2B] transition-colors"
               >
@@ -382,7 +377,7 @@ export default function Contact() {
             height="100%"
             frameBorder="0"
             title="Giza Renovations Miami Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.1234567890!2d-80.19!3d25.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b2b2b2b2b2b%3A0x1234567890!2sDowntown%20Miami!5e0!3m2!1sen!2sus!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50000!2d-80.19!3d25.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b2b2b2b2b2b%3A0x1234567890!2sDowntown%20Miami!5e0!3m2!1sen!2sus!4v1234567890"
             style={{ border: 0, filter: 'grayscale(100%) contrast(0.9)' }}
             allowFullScreen=""
             loading="lazy"

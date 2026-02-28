@@ -34,7 +34,6 @@ function readCollection(collectionName: string) {
 function readItem(collectionName: string, slug: string) {
   const collectionPath = path.join(CONTENT_DIR, collectionName);
   
-  // Try different extensions
   const extensions = [".md", ".yml", ".yaml"];
   
   for (const ext of extensions) {
@@ -53,7 +52,7 @@ function readItem(collectionName: string, slug: string) {
   return null;
 }
 
-// Get all projects
+// Get all projects (for cards on Projects page)
 export function getProjects(_req: Request, res: Response) {
   try {
     const projects = readCollection("projects");
@@ -61,6 +60,23 @@ export function getProjects(_req: Request, res: Response) {
   } catch (error) {
     console.error("Error reading projects:", error);
     res.status(500).json({ error: "Failed to read projects" });
+  }
+}
+
+// Get a single project by slug (for Project Detail page)
+export function getProjectBySlug(req: Request, res: Response) {
+  try {
+    const { slug } = req.params;
+    const project = readItem("projects", slug);
+    
+    if (!project) {
+      return res.status(404).json({ error: "Project not found" });
+    }
+    
+    res.json(project);
+  } catch (error) {
+    console.error("Error reading project:", error);
+    res.status(500).json({ error: "Failed to read project" });
   }
 }
 
@@ -101,33 +117,5 @@ export function getSettings(_req: Request, res: Response) {
   } catch (error) {
     console.error("Error reading settings:", error);
     res.status(500).json({ error: "Failed to read settings" });
-  }
-}
-
-// Get all project details
-export function getProjectDetails(_req: Request, res: Response) {
-  try {
-    const projectDetails = readCollection("project-details");
-    res.json(projectDetails);
-  } catch (error) {
-    console.error("Error reading project details:", error);
-    res.status(500).json({ error: "Failed to read project details" });
-  }
-}
-
-// Get a single project detail by slug
-export function getProjectDetailBySlug(req: Request, res: Response) {
-  try {
-    const { slug } = req.params;
-    const projectDetail = readItem("project-details", slug);
-    
-    if (!projectDetail) {
-      return res.status(404).json({ error: "Project not found" });
-    }
-    
-    res.json(projectDetail);
-  } catch (error) {
-    console.error("Error reading project detail:", error);
-    res.status(500).json({ error: "Failed to read project detail" });
   }
 }

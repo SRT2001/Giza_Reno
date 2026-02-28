@@ -1,83 +1,78 @@
 backend:
-  name: git-gateway # For production with Netlify Identity
+  name: git-gateway
   branch: main
 
-# Enable local backend for development (requires npx decap-server)
 local_backend: true
 
-media_folder: "public/images/uploads" # Where media files will be stored
-public_folder: "/images/uploads" # Public URL path
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "project-details"
-    label: "Project Details"
-    folder: "content/project-details"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      # Basic Info
-      - { label: "Title", name: "title", widget: "string", hint: "Main project title" }
-      - { label: "Subtitle", name: "subtitle", widget: "string", hint: "e.g., Full Bathroom Transformation | Contemporary Design" }
-      - { label: "Hero Image", name: "heroImage", widget: "image", hint: "Main banner image (1600x900 recommended)" }
-      
-      # Metadata
-      - { label: "Location", name: "location", widget: "string", hint: "e.g., Miami, Florida" }
-      - { label: "Timeline", name: "date", widget: "string", hint: "e.g., 4 Months (Completed 2024)" }
-      - { label: "Client", name: "client", widget: "string", hint: "e.g., Private Homeowner" }
-      - { label: "Scope", name: "scope", widget: "string", hint: "e.g., Full Kitchen Renovation" }
-      
-      # Overview
-      - { label: "Overview", name: "overview", widget: "text", hint: "Brief project description (2-3 sentences)" }
-      
-      # Before & After
-      - { label: "Before Image", name: "beforeImage", widget: "image", hint: "Before renovation photo" }
-      - { label: "After Image", name: "afterImage", widget: "image", hint: "After renovation photo" }
-      - { label: "Before Title", name: "beforeTitle", widget: "string", default: "Before" }
-      - { label: "After Title", name: "afterTitle", widget: "string", default: "After" }
-      - { label: "Transformation Description", name: "transformationDescription", widget: "string", hint: "Text shown above the slider" }
-      
-      # Design Concept Sections
-      - label: "Design Sections"
-        name: "sections"
-        widget: "list"
-        hint: "Add content sections (Design Concept, etc.)"
-        fields:
-          - { label: "Section Title", name: "title", widget: "string" }
-          - { label: "Section Content", name: "content", widget: "text" }
-      
-      # Features List
-      - label: "Features"
-        name: "features"
-        widget: "list"
-        hint: "Key features/upgrades (one per line)"
-        field: { label: "Feature", name: "feature", widget: "string" }
-      
-      # Highlight Sections (Value props)
-      - label: "Highlight Sections"
-        name: "highlightSections"
-        widget: "list"
-        hint: "Value propositions shown in the Elevated Living section"
-        fields:
-          - { label: "Title", name: "title", widget: "string", hint: "e.g., Improved Flow" }
-          - { label: "Description", name: "description", widget: "text" }
-      
-      # CTA Section
-      - { label: "CTA Heading", name: "ctaText", widget: "string", hint: "e.g., Ready to Transform Your Kitchen?" }
-      - { label: "CTA Button Text", name: "ctaButtonText", widget: "string", default: "Schedule a Consultation" }
-
   - name: "projects"
-    label: "Projects (Cards)"
+    label: "Projects"
     folder: "content/projects"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "image", widget: "image" }
+      # === CARD FIELDS (shown on Projects page) ===
+      - { label: "Title", name: "title", widget: "string", hint: "Project title (shown on card and detail page)" }
+      - { label: "Description", name: "description", widget: "text", hint: "Short description for the project card" }
+      - { label: "Featured Image", name: "image", widget: "image", hint: "Main image for the project card" }
       - { label: "Category", name: "category", widget: "select", options: ["Residential", "Commercial", "Renovation"] }
-      - { label: "Tags", name: "tags", widget: "list", default: ["Renovation"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["Renovation"], hint: "Tags shown on the card" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      
+      # === DETAIL PAGE FIELDS (shown on Project Detail page) ===
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false, hint: "e.g., Full Bathroom Transformation | Contemporary Design" }
+      - { label: "Hero Image", name: "heroImage", widget: "image", required: false, hint: "Large banner image for detail page (uses Featured Image if blank)" }
+      
+      # Metadata
+      - { label: "Location", name: "location", widget: "string", required: false, hint: "e.g., Miami, Florida" }
+      - { label: "Timeline", name: "timeline", widget: "string", required: false, hint: "e.g., 4 Months (Completed 2024)" }
+      - { label: "Client", name: "client", widget: "string", required: false, hint: "e.g., Private Homeowner" }
+      - { label: "Scope", name: "scope", widget: "string", required: false, hint: "e.g., Full Kitchen Renovation" }
+      
+      # Overview
+      - { label: "Overview", name: "overview", widget: "text", required: false, hint: "Detailed project description for the detail page" }
+      
+      # Before & After
+      - { label: "Before Image", name: "beforeImage", widget: "image", required: false }
+      - { label: "After Image", name: "afterImage", widget: "image", required: false }
+      - { label: "Before Title", name: "beforeTitle", widget: "string", required: false, default: "Before" }
+      - { label: "After Title", name: "afterTitle", widget: "string", required: false, default: "After" }
+      - { label: "Transformation Description", name: "transformationDescription", widget: "string", required: false, hint: "Text shown above the before/after slider" }
+      
+      # Design Sections
+      - label: "Design Sections"
+        name: "sections"
+        widget: "list"
+        required: false
+        hint: "Content sections for the detail page"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Section Content", name: "content", widget: "text" }
+      
+      # Features
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        required: false
+        hint: "Key features/upgrades list"
+        field: { label: "Feature", name: "feature", widget: "string" }
+      
+      # Highlight Sections
+      - label: "Highlight Sections"
+        name: "highlightSections"
+        widget: "list"
+        required: false
+        hint: "Value propositions (Improved Flow, Market Position, etc.)"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      
+      # CTA
+      - { label: "CTA Heading", name: "ctaText", widget: "string", required: false, default: "Ready to Start Your Project?" }
+      - { label: "CTA Button Text", name: "ctaButtonText", widget: "string", required: false, default: "Schedule a Consultation" }
 
   - name: "testimonials"
     label: "Testimonials"

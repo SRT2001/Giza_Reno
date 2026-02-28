@@ -363,7 +363,7 @@ export default function ProjectDetail() {
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-2">Timeline</p>
-            <p className="text-gray-900 text-sm">{project.date}</p>
+            <p className="text-gray-900 text-sm">{project.timeline || project.date}</p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-gray-600 font-semibold mb-2">Client</p>
@@ -408,7 +408,7 @@ export default function ProjectDetail() {
           >
             {/* After Image (Background) */}
             <div className="absolute inset-0">
-              <img src={project.afterImage} alt="After Renovation" className="w-full h-full object-cover" />
+              <img loading="lazy" src={project.afterImage} alt="After Renovation" className="w-full h-full object-cover" />
               <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-4 py-2 text-xs font-semibold tracking-wider uppercase text-gray-900">After</div>
             </div>
 
@@ -417,7 +417,7 @@ export default function ProjectDetail() {
               className="absolute inset-0 border-r-2 border-white pointer-events-none"
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
-              <img src={project.beforeImage} alt="Before Renovation" className="w-full h-full object-cover opacity-90" />
+              <img loading="lazy" src={project.beforeImage} alt="Before Renovation" className="w-full h-full object-cover opacity-90" />
               <div className="absolute top-6 left-6 bg-black/80 backdrop-blur-sm px-4 py-2 text-xs font-semibold tracking-wider uppercase text-white">Before</div>
             </div>
 

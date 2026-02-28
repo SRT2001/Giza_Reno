@@ -1,10 +1,43 @@
 ---
-title: office development
-description: We created a modern, and upscale office space.
-image: /images/uploads/razlan-hanafiah-3nrocrjzifq-unsplash.jpg
-category: Commercial
+title: "Modern Office Development & Interior Build-Out"
+description: "Commercial office transformation featuring glass partitions, collaborative workspaces, and modern industrial finishes. Complete build-out from vacant shell."
+image: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F848e39b319e349aaacc5c442ebba91ee?format=webp&width=1600&height=2400"
+category: "Commercial"
 tags:
-  - Renovation
-date: 2026-02-19T01:09:00.000-05:00
+  - "Commercial"
+  - "Modern"
+  - "Office"
+  - "Build-Out"
+date: "2024-05-01"
+subtitle: "Commercial Office Transformation | Miami, FL"
+heroImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F848e39b319e349aaacc5c442ebba91ee?format=webp&width=1600&height=900"
+location: "Miami, Florida"
+timeline: "4 Months (Completed 2024)"
+client: "Corporate Client"
+scope: "Full Commercial Office Build-Out"
+overview: "This commercial office development project transformed a vacant, unfinished corporate floor into a fully built-out, modern workspace designed for functionality, efficiency, and architectural presence. What began as an empty shell with exposed ceilings, outdated lighting grids, and raw concrete flooring is now a refined, glass-partitioned office environment featuring private meeting rooms, collaborative spaces, and clean industrial finishes."
+beforeImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F69478feeffd647908d2e3677e20fe629?format=webp&width=800&height=1200"
+afterImage: "https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F848e39b319e349aaacc5c442ebba91ee?format=webp&width=800&height=1200"
+beforeTitle: "Before"
+afterTitle: "After"
+transformationDescription: "Drag the slider to see the transformation from a vacant shell to a sophisticated corporate office environment."
+sections:
+  - title: "Design Concept"
+    content: "The goal was to create a professional, modern office space that enhances workflow, supports team productivity, and leaves a strong impression on clients. The design direction combined industrial minimalism with warm, professional elements to balance openness with privacy. We focused on maximizing natural light penetration while maintaining acoustic privacy through strategic glass partitioning and acoustic ceiling design."
+features:
+  - "Full commercial interior build-out"
+  - "Glass-partitioned private offices"
+  - "Open collaborative work areas"
+  - "Electrical rewiring and panel upgrades"
+  - "Custom lighting design"
+  - "Polished concrete flooring"
+  - "Acoustic ceiling tiles"
+  - "Wood accent feature walls"
+highlightSections:
+  - title: "Improved Workflow"
+    description: "The redesigned floor plan optimizes circulation and defines separate work zones, improving employee productivity and client navigation through the space."
+  - title: "Professional Presence"
+    description: "Modern glass partitions and refined finishes create a sophisticated corporate aesthetic that strengthens the company's brand image and client impression."
+ctaText: "Ready to Build Your Office Space?"
+ctaButtonText: "Schedule a Consultation"
 ---
-We took this project to a new level and curated an amazing experience for the office employees

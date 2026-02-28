@@ -30,12 +30,6 @@ export default function About() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                to="/about"
-                className="px-6 py-3 bg-white text-gray-900 rounded text-base font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Learn More
-              </Link>
-              <Link
                 to="/contact"
                 className="px-6 py-3 border-2 border-white text-white rounded text-base font-semibold hover:bg-white/10 transition-colors"
               >

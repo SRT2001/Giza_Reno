@@ -2,30 +2,37 @@ import { useState, useEffect } from "react";
 
 export interface ProjectDetailData {
   slug: string;
+  // Card fields
   title: string;
-  subtitle: string;
-  heroImage: string;
-  location: string;
+  description: string;
+  image: string;
+  category: string;
+  tags: string[];
   date: string;
-  client: string;
-  scope: string;
-  overview: string;
-  beforeImage: string;
-  afterImage: string;
-  beforeTitle: string;
-  afterTitle: string;
-  transformationDescription: string;
-  sections: {
+  // Detail fields
+  subtitle?: string;
+  heroImage?: string;
+  location?: string;
+  timeline?: string;
+  client?: string;
+  scope?: string;
+  overview?: string;
+  beforeImage?: string;
+  afterImage?: string;
+  beforeTitle?: string;
+  afterTitle?: string;
+  transformationDescription?: string;
+  sections?: {
     title: string;
     content: string;
   }[];
-  features: string[];
-  highlightSections: {
+  features?: string[];
+  highlightSections?: {
     title: string;
     description: string;
   }[];
-  ctaText: string;
-  ctaButtonText: string;
+  ctaText?: string;
+  ctaButtonText?: string;
 }
 
 export function useProjectDetail(slug: string | undefined) {
@@ -41,7 +48,8 @@ export function useProjectDetail(slug: string | undefined) {
 
     async function fetchProjectDetail() {
       try {
-        const res = await fetch(`/api/content/project-details/${slug}`);
+        // Fetch from unified projects endpoint
+        const res = await fetch(`/api/content/projects/${slug}`);
         if (res.ok) {
           const data = await res.json();
           setProject(data);

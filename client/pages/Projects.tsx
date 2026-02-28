@@ -1,3 +1,4 @@
+import OptimizedImage from "../components/OptimizedImage";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -285,13 +286,11 @@ export default function Projects() {
             {projects.map((project) => (
               <div key={project.slug} className="space-y-6">
                 {/* Project Image - Full Width */}
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
+                <OptimizedImage
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded-lg w-full h-[400px] md:h-[500px]"
+                />
 
                 {/* Project Details - Horizontal Layout */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -314,9 +313,16 @@ export default function Projects() {
 
                   {/* Description */}
                   <div>
-                    <p className="text-base text-gray-700 leading-relaxed">
+                    <p className="text-base text-gray-700 leading-relaxed mb-6">
                       {project.description}
                     </p>
+                    <Link
+                      to={`/projects/${project.slug}`}
+                      className="inline-flex items-center gap-2 text-gray-900 font-semibold hover:text-gray-600 transition-colors"
+                    >
+                      View Project Details
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -406,31 +412,31 @@ export default function Projects() {
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
             {/* Houzz Logo */}
-            <img
+            <img loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F0954b31a1b8e4168a6b9f08b3c709844?format=webp&width=800"
               alt="Houzz"
               className="h-8 md:h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
             />
             {/* BBB Logo */}
-            <img
+            <img loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fdcdf337541f849319421754a8df88cd9?format=webp&width=800"
               alt="BBB Accredited Business"
               className="h-12 md:h-14 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
             />
             {/* Lowe's Logo */}
-            <img
+            <img loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2Fb0844bcc46e54e3499af151e40ac9083?format=webp&width=800"
               alt="Lowe's Home Improvement"
               className="h-10 md:h-12 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
             />
             {/* Home Depot Logo */}
-            <img
+            <img loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F54fc52ce6e144ffdab0f5d1ed8345bb7?format=webp&width=800"
               alt="The Home Depot"
               className="h-10 md:h-12 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
             />
             {/* Angie's List Logo */}
-            <img
+            <img loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F2b426367b50248b28111cbdc73598dfc?format=webp&width=800"
               alt="Angie's List"
               className="h-8 md:h-10 w-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all"
@@ -468,11 +474,11 @@ export default function Projects() {
             </div>
 
             {/* Right Column - Image */}
-            <div className="overflow-hidden rounded-lg">
-              <img
+            <div className="overflow-hidden rounded-lg w-full h-[400px] md:h-[500px]">
+              <img loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets%2Ff8fc8faad3844710a06fef1ff8cf1884%2F4a0eb737d19f4b689c5f361766c05d92?format=webp&width=1600&height=2400"
                 alt="Modern bathroom renovation"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
